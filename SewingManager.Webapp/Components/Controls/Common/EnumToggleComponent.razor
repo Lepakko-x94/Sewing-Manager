@@ -1,0 +1,31 @@
+﻿@using System.ComponentModel.DataAnnotations
+@typeparam TEnum where TEnum : struct, Enum
+
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+	@foreach (var value in Enum.GetValues(typeof(TEnum)).Cast<TEnum>())
+	{
+		<label class="btn btn-secondary @(Value?.Equals(value) == true ? "active" : "")">
+			<input type="radio"
+			       name="@GroupName"
+			       class="visually-hidden"
+			       checked="@(Value?.Equals(value) == true)"
+			       @onchange="@(() => ValueChanged.InvokeAsync(value))" />
+			@GetDisplayName(value)
+		</label>
+	}
+</div>
+
+@code {
+	[Parameter] public TEnum? Value { get; set; }
+	[Parameter] public EventCallback<TEnum> ValueChanged { get; set; }
+	[Parameter] public string GroupName { get; set; } = Guid.NewGuid().ToString();
+
+	private static string GetDisplayName(TEnum value)
+	{
+		var field = typeof(TEnum).GetField(value.ToString());
+		var attr = field?.GetCustomAttributes(typeof(DisplayAttribute), false)
+			.Cast<DisplayAttribute>()
+			.FirstOrDefault();
+		return attr?.Name ?? value.ToString();
+	}
+}

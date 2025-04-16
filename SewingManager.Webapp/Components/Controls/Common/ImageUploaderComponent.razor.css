@@ -1,0 +1,53 @@
+﻿.image-container {
+    max-width: 400px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+    .image-container .img-thumbnail {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-container .btn-danger {
+        top: 10px;
+        right: 10px;
+        z-index: 10;
+    }
+
+.file-drop-zone {
+    border: 2px dashed #6c757d;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+    .file-drop-zone.hover {
+        border: 2px solid #007bff;
+        background-color: #e9ecef;
+    }
+
+::deep input[type=file] {
+    width: 100%;
+    padding: 20px;
+}
+
+.error-message-container {
+    color: red;
+    text-align: center;
+}

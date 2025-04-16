@@ -1,0 +1,146 @@
+﻿@page "/materials/add"
+
+@rendermode InteractiveServer
+
+@inject IViewMaterialCategoriesByNameUseCase ViewMaterialCategoriesByNameUseCase
+@inject IAddMaterialUseCase AddMaterialUseCase
+@inject NavigationManager NavigationManager
+
+<PageTitle>Додати сировину</PageTitle>
+
+<br />
+
+<EditForm Model="Material" OnValidSubmit="Save">
+    <DataAnnotationsValidator />
+
+    <div class="row">
+	    <div class="col-md-8">
+		    <div class="row">
+			    <div class="col-md-9">
+				    <div class="form-group mb-2">
+					    <label>Назва</label>
+					    <InputText class="form-control" @bind-Value="Material.Name"/>
+					    <ValidationMessage For="() => Material.Name"/>
+				    </div>
+			    </div>
+			    <div class="col-md-3">
+				    <div class="form-group mb-2">
+					    <label>Код / Артикул</label>
+					    <InputText class="form-control" @bind-Value="Material.MaterialCode"/>
+					    <ValidationMessage For="() => Material.MaterialCode"/>
+				    </div>
+			    </div>
+		    </div>
+
+		    <div>
+			    <label>Опис</label>
+			    <InputTextArea class="form-control" @bind-Value="Material.Description" Rows="9"/>
+			    <ValidationMessage For="() => Material.Description"/>
+		    </div>
+
+		    <div>
+			    <label>Категорія матеріалу:</label>
+			    <InputSelect class="form-control" @bind-Value="Material.CategoryId">
+				    <option value="" disabled selected>Оберіть тип матеріалу</option>
+				    @if (_categories != null)
+				    {
+					    foreach (var cat in _categories)
+					    {
+						    <option value="@cat.MaterialCategoryId">@cat.Name</option>
+					    }
+				    }
+			    </InputSelect>
+			    <ValidationMessage For="() => Material.CategoryId"/>
+		    </div>
+		    <p></p>
+		    <div class="card">
+			    <div class="card-body">
+				    <EnumToggleComponent TEnum="MaterialType"
+				                         Value="@Material.Type"
+				                         ValueChanged="@((MaterialType t) => Material.Type = t)" />
+				    <p></p>
+				    @if (Material.Type == MaterialType.Cut)
+				    {
+					    <div class="form-group mb-2">
+						    <label>Наявна кількість (м.)</label>
+						    <InputNumber class="form-control" @bind-Value="Material.Quantity" />
+						    <ValidationMessage For="() => Material.Quantity" />
+					    </div>
+
+					    <div class="form-group mb-2">
+						    <label>Ціна за м.</label>
+						    <InputNumber class="form-control" @bind-Value="Material.Price" />
+						    <ValidationMessage For="() => Material.Price" />
+					    </div>
+				    }
+				    else if (Material.Type == MaterialType.Piece)
+				    {
+					    <div class="form-group mb-2">
+						    <label>Наявна кількість (шт.)</label>
+						    <InputNumber class="form-control" @bind-Value="Material.Quantity" />
+						    <ValidationMessage For="() => Material.Quantity" />
+					    </div>
+
+					    <div class="form-group mb-2">
+						    <label>Ціна за шт.</label>
+						    <InputNumber class="form-control" @bind-Value="Material.Price" />
+						    <ValidationMessage For="() => Material.Price" />
+					    </div>
+				    }
+			    </div>
+		    </div>
+
+	    </div>
+	    <div class="col-md-4 text-center">
+		    <div class="card" style="width: 100%; max-width: 100%;">
+			    <div class="card-body">
+					<ImageUploaderComponent OnImageSelected="HandleImageSelected"></ImageUploaderComponent>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+
+	<p></p>
+	<button type="submit" class="btn btn-primary">Зберегти</button>
+    &nbsp;
+    <a href="/materials" class="btn btn-secondary">Скасувати</a>
+    <p></p>
+</EditForm>
+
+@code {
+	private MaterialViewModel Material { get; set; } = new MaterialViewModel();
+	private List<MaterialCategory>? _categories;
+
+	private IBrowserFile? _selectedFile;
+
+	protected override async Task OnInitializedAsync()
+	{
+		_categories = (await ViewMaterialCategoriesByNameUseCase.ExecuteAsync(string.Empty)).ToList();
+	}
+
+	private void HandleImageSelected(IBrowserFile file)
+	{
+		_selectedFile = file;
+	}
+
+	private async Task Save()
+	{
+
+		var mat = new Material
+		{
+			MaterialId = Material.MaterialId,
+			MaterialCode = Material.MaterialCode,
+			CategoryId = Material.CategoryId,
+			Name = Material.Name,
+			Description = Material.Description,
+			Type = Material.Type,
+			Quantity = Material.Quantity,
+			Price = Material.Price,
+			ImageUrl = Material.ImageUrl
+		};
+
+		await AddMaterialUseCase.ExecuteAsync(mat, _selectedFile);
+
+		NavigationManager.NavigateTo("/materials");
+	}
+}

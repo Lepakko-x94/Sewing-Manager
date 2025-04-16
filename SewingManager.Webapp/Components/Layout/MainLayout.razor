@@ -1,0 +1,45 @@
+﻿@inject NavigationManager NavigationManager
+@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+	    <div class="top-row px-4">
+			<span class="page-title">@PageName</span>
+	    </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+	private string PageName { get; set; } = "Home";
+
+	protected override void OnInitialized()
+	{
+		UpdatePageTitle();
+	}
+
+	protected override void OnAfterRender(bool firstRender)
+	{
+		UpdatePageTitle();
+	}
+
+	private void UpdatePageTitle()
+	{
+		var currentPage = NavigationManager.Uri.Split('/').LastOrDefault();
+		PageName = currentPage switch
+		{
+			"" => "Home",
+			"weather" => "Weather",
+			"materials" => "Склад матеріалів",
+			"add" => "Додати сировину",
+			_ => "Unknown Page"
+		};
+	}
+}

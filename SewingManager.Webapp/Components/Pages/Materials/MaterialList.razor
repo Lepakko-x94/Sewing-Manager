@@ -1,0 +1,21 @@
+﻿
+@page "/materials"
+
+<PageTitle>Матеріали</PageTitle>
+
+<SearchComponent OnSearch="HandleSearch"></SearchComponent>
+<br/>
+
+<MaterialListComponent SearchInventoryFilter="@materialNameToSearch"></MaterialListComponent>
+<br/>
+<a href="/materials/add" class="btn btn-primary">Додати</a>
+
+@code {
+	private string? materialNameToSearch;
+
+	private void HandleSearch(string searchFilter)
+	{
+		materialNameToSearch = searchFilter;
+	}
+
+}

@@ -1,0 +1,37 @@
+﻿
+@inject IViewMaterialsByNameUseCase ViewMaterialsByNameUseCase
+
+<table class="table">
+	<thead>
+	<tr>
+		<th style="width: 8%;"></th>
+		<th style="width: 37%;">Назва</th>
+		<th style="width: 10%;">Код</th>
+		<th style="width: 15%;">Наявна кількість</th>
+		<th style="width: 15%;">Ціна за од./м.</th>
+		<th style="width: 15%;"></th>
+	</tr>
+	</thead>
+	<tbody>
+	@if (_materials is not null && _materials.Count > 0)
+	{
+			foreach (var material in _materials)
+		{
+				<MaterialListItemComponent @rendermode="InteractiveServer" Material="material"></MaterialListItemComponent>
+		}
+	}
+	</tbody>
+</table>
+
+@code
+{
+	private List<Material>? _materials;
+
+	[Parameter]
+	public string? SearchInventoryFilter { get; set; }
+
+	protected override async Task OnParametersSetAsync()
+	{
+		_materials = (await ViewMaterialsByNameUseCase.ExecuteAsync(SearchInventoryFilter ?? string.Empty)).ToList();
+	}
+}
