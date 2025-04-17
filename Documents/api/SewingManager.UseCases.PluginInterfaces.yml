@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.UseCases.PluginInterfaces
+  commentId: N:SewingManager.UseCases.PluginInterfaces
+  id: SewingManager.UseCases.PluginInterfaces
+  children:
+  - SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.UseCases.PluginInterfaces
+  nameWithType: SewingManager.UseCases.PluginInterfaces
+  fullName: SewingManager.UseCases.PluginInterfaces
+  type: Namespace
+  assemblies:
+  - SewingManager.UseCases
+references:
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  commentId: T:SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  parent: SewingManager.UseCases.PluginInterfaces
+  href: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.html
+  name: IMaterialRepository
+  nameWithType: IMaterialRepository
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+- uid: SewingManager.UseCases.PluginInterfaces
+  commentId: N:SewingManager.UseCases.PluginInterfaces
+  href: SewingManager.html
+  name: SewingManager.UseCases.PluginInterfaces
+  nameWithType: SewingManager.UseCases.PluginInterfaces
+  fullName: SewingManager.UseCases.PluginInterfaces
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.PluginInterfaces
+    name: PluginInterfaces
+    href: SewingManager.UseCases.PluginInterfaces.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.PluginInterfaces
+    name: PluginInterfaces
+    href: SewingManager.UseCases.PluginInterfaces.html

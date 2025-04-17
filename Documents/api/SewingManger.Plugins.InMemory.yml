@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManger.Plugins.InMemory
+  commentId: N:SewingManger.Plugins.InMemory
+  id: SewingManger.Plugins.InMemory
+  children:
+  - SewingManger.Plugins.InMemory.MaterialRepository
+  langs:
+  - csharp
+  - vb
+  name: SewingManger.Plugins.InMemory
+  nameWithType: SewingManger.Plugins.InMemory
+  fullName: SewingManger.Plugins.InMemory
+  type: Namespace
+  assemblies:
+  - SewingManger.Plugins.InMemory
+references:
+- uid: SewingManger.Plugins.InMemory.MaterialRepository
+  commentId: T:SewingManger.Plugins.InMemory.MaterialRepository
+  href: SewingManger.Plugins.InMemory.MaterialRepository.html
+  name: MaterialRepository
+  nameWithType: MaterialRepository
+  fullName: SewingManger.Plugins.InMemory.MaterialRepository

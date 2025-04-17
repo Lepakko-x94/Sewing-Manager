@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.Webapp.Components.Controls.Common
+  commentId: N:SewingManager.Webapp.Components.Controls.Common
+  id: SewingManager.Webapp.Components.Controls.Common
+  children:
+  - SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent`1
+  - SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent
+  - SewingManager.Webapp.Components.Controls.Common.MaterialListComponent
+  - SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent
+  - SewingManager.Webapp.Components.Controls.Common.SearchComponent
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.Webapp.Components.Controls.Common
+  nameWithType: SewingManager.Webapp.Components.Controls.Common
+  fullName: SewingManager.Webapp.Components.Controls.Common
+  type: Namespace
+  assemblies:
+  - SewingManager.Webapp
+references:
+- uid: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent`1
+  commentId: T:SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent`1
+  href: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent-1.html
+  name: EnumToggleComponent<TEnum>
+  nameWithType: EnumToggleComponent<TEnum>
+  fullName: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent<TEnum>
+  nameWithType.vb: EnumToggleComponent(Of TEnum)
+  fullName.vb: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent(Of TEnum)
+  name.vb: EnumToggleComponent(Of TEnum)
+  spec.csharp:
+  - uid: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent`1
+    name: EnumToggleComponent
+    href: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent-1.html
+  - name: <
+  - name: TEnum
+  - name: '>'
+  spec.vb:
+  - uid: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent`1
+    name: EnumToggleComponent
+    href: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEnum
+  - name: )
+- uid: SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent
+  commentId: T:SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent
+  href: SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent.html
+  name: ImageUploaderComponent
+  nameWithType: ImageUploaderComponent
+  fullName: SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent
+- uid: SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent
+  commentId: T:SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent
+  href: SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent.html
+  name: MaterialListItemComponent
+  nameWithType: MaterialListItemComponent
+  fullName: SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent
+- uid: SewingManager.Webapp.Components.Controls.Common.SearchComponent
+  commentId: T:SewingManager.Webapp.Components.Controls.Common.SearchComponent
+  href: SewingManager.Webapp.Components.Controls.Common.SearchComponent.html
+  name: SearchComponent
+  nameWithType: SearchComponent
+  fullName: SewingManager.Webapp.Components.Controls.Common.SearchComponent
+- uid: SewingManager.Webapp.Components.Controls.Common.MaterialListComponent
+  commentId: T:SewingManager.Webapp.Components.Controls.Common.MaterialListComponent
+  href: SewingManager.Webapp.Components.Controls.Common.MaterialListComponent.html
+  name: MaterialListComponent
+  nameWithType: MaterialListComponent
+  fullName: SewingManager.Webapp.Components.Controls.Common.MaterialListComponent

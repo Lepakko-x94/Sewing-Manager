@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.Webapp.ViewModelsValidations
+  commentId: N:SewingManager.Webapp.ViewModelsValidations
+  id: SewingManager.Webapp.ViewModelsValidations
+  children:
+  - SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.Webapp.ViewModelsValidations
+  nameWithType: SewingManager.Webapp.ViewModelsValidations
+  fullName: SewingManager.Webapp.ViewModelsValidations
+  type: Namespace
+  assemblies:
+  - SewingManager.Webapp
+references:
+- uid: SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute
+  commentId: T:SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute
+  href: SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute.html
+  name: Material_QuantityValidationByTypeAttribute
+  nameWithType: Material_QuantityValidationByTypeAttribute
+  fullName: SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute

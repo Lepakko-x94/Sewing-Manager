@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.Infrastructure
+  commentId: N:SewingManager.Infrastructure
+  id: SewingManager.Infrastructure
+  children:
+  - SewingManager.Infrastructure.FileStorageService
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.Infrastructure
+  nameWithType: SewingManager.Infrastructure
+  fullName: SewingManager.Infrastructure
+  type: Namespace
+  assemblies:
+  - SewingManager.Infrastructure
+references:
+- uid: SewingManager.Infrastructure.FileStorageService
+  commentId: T:SewingManager.Infrastructure.FileStorageService
+  href: SewingManager.Infrastructure.FileStorageService.html
+  name: FileStorageService
+  nameWithType: FileStorageService
+  fullName: SewingManager.Infrastructure.FileStorageService

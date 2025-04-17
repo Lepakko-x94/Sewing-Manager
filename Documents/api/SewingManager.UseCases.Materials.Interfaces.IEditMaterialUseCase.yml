@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+  id: IEditMaterialUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  children:
+  - SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync(SewingManager.CoreBusiness.Material,Microsoft.AspNetCore.Components.Forms.IBrowserFile)
+  langs:
+  - csharp
+  - vb
+  name: IEditMaterialUseCase
+  nameWithType: IEditMaterialUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+  type: Interface
+  source:
+    remote:
+      path: SewingManager.UseCases/Materials/Interfaces/IEditMaterialUseCase.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: IEditMaterialUseCase
+    path: ../SewingManager.UseCases/Materials/Interfaces/IEditMaterialUseCase.cs
+    startLine: 8
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.Materials.Interfaces
+  summary: Інтерфейс для редагування інформації про матеріал у системі.
+  example: []
+  syntax:
+    content: public interface IEditMaterialUseCase
+    content.vb: Public Interface IEditMaterialUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync(SewingManager.CoreBusiness.Material,Microsoft.AspNetCore.Components.Forms.IBrowserFile)
+  commentId: M:SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync(SewingManager.CoreBusiness.Material,Microsoft.AspNetCore.Components.Forms.IBrowserFile)
+  id: ExecuteAsync(SewingManager.CoreBusiness.Material,Microsoft.AspNetCore.Components.Forms.IBrowserFile)
+  parent: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(Material, IBrowserFile?)
+  nameWithType: IEditMaterialUseCase.ExecuteAsync(Material, IBrowserFile?)
+  fullName: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync(SewingManager.CoreBusiness.Material, Microsoft.AspNetCore.Components.Forms.IBrowserFile?)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/Materials/Interfaces/IEditMaterialUseCase.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: ExecuteAsync
+    path: ../SewingManager.UseCases/Materials/Interfaces/IEditMaterialUseCase.cs
+    startLine: 21
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.Materials.Interfaces
+  summary: Виконує операцію редагування існуючого матеріалу в системі.
+  remarks: Цей метод дозволяє редагувати дані матеріалу, а також оновлювати супутні файли, якщо вони надані.
+  example: []
+  syntax:
+    content: Task ExecuteAsync(Material material, IBrowserFile? file)
+    parameters:
+    - id: material
+      type: SewingManager.CoreBusiness.Material
+      description: Об'єкт матеріалу, який потрібно оновити.
+    - id: file
+      type: Microsoft.AspNetCore.Components.Forms.IBrowserFile
+      description: Файл, що супроводжує матеріал (наприклад, зображення або інший документ), або <code>null</code>, якщо файл не надано.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Завдання, яке виконується асинхронно.
+    content.vb: Function ExecuteAsync(material As Material, file As IBrowserFile) As Task
+  overload: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync*
+  nameWithType.vb: IEditMaterialUseCase.ExecuteAsync(Material, IBrowserFile)
+  fullName.vb: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync(SewingManager.CoreBusiness.Material, Microsoft.AspNetCore.Components.Forms.IBrowserFile)
+  name.vb: ExecuteAsync(Material, IBrowserFile)
+references:
+- uid: SewingManager.UseCases.Materials.Interfaces
+  commentId: N:SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.html
+  name: SewingManager.UseCases.Materials.Interfaces
+  nameWithType: SewingManager.UseCases.Materials.Interfaces
+  fullName: SewingManager.UseCases.Materials.Interfaces
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+- uid: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync*
+  commentId: Overload:SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync
+  href: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.html#SewingManager_UseCases_Materials_Interfaces_IEditMaterialUseCase_ExecuteAsync_SewingManager_CoreBusiness_Material_Microsoft_AspNetCore_Components_Forms_IBrowserFile_
+  name: ExecuteAsync
+  nameWithType: IEditMaterialUseCase.ExecuteAsync
+  fullName: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.ExecuteAsync
+- uid: SewingManager.CoreBusiness.Material
+  commentId: T:SewingManager.CoreBusiness.Material
+  parent: SewingManager.CoreBusiness
+  href: SewingManager.CoreBusiness.Material.html
+  name: Material
+  nameWithType: Material
+  fullName: SewingManager.CoreBusiness.Material
+- uid: Microsoft.AspNetCore.Components.Forms.IBrowserFile
+  commentId: T:Microsoft.AspNetCore.Components.Forms.IBrowserFile
+  parent: Microsoft.AspNetCore.Components.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms.ibrowserfile
+  name: IBrowserFile
+  nameWithType: IBrowserFile
+  fullName: Microsoft.AspNetCore.Components.Forms.IBrowserFile
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: SewingManager.CoreBusiness
+  commentId: N:SewingManager.CoreBusiness
+  href: SewingManager.html
+  name: SewingManager.CoreBusiness
+  nameWithType: SewingManager.CoreBusiness
+  fullName: SewingManager.CoreBusiness
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+- uid: Microsoft.AspNetCore.Components.Forms
+  commentId: N:Microsoft.AspNetCore.Components.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components.Forms
+  nameWithType: Microsoft.AspNetCore.Components.Forms
+  fullName: Microsoft.AspNetCore.Components.Forms
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

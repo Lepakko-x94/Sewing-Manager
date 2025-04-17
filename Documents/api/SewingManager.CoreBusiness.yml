@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.CoreBusiness
+  commentId: N:SewingManager.CoreBusiness
+  id: SewingManager.CoreBusiness
+  children:
+  - SewingManager.CoreBusiness.Material
+  - SewingManager.CoreBusiness.MaterialCategory
+  - SewingManager.CoreBusiness.MaterialType
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.CoreBusiness
+  nameWithType: SewingManager.CoreBusiness
+  fullName: SewingManager.CoreBusiness
+  type: Namespace
+  assemblies:
+  - SewingManager.CoreBusiness
+references:
+- uid: SewingManager.CoreBusiness.Material
+  commentId: T:SewingManager.CoreBusiness.Material
+  parent: SewingManager.CoreBusiness
+  href: SewingManager.CoreBusiness.Material.html
+  name: Material
+  nameWithType: Material
+  fullName: SewingManager.CoreBusiness.Material
+- uid: SewingManager.CoreBusiness.MaterialCategory
+  commentId: T:SewingManager.CoreBusiness.MaterialCategory
+  parent: SewingManager.CoreBusiness
+  href: SewingManager.CoreBusiness.MaterialCategory.html
+  name: MaterialCategory
+  nameWithType: MaterialCategory
+  fullName: SewingManager.CoreBusiness.MaterialCategory
+- uid: SewingManager.CoreBusiness.MaterialType
+  commentId: T:SewingManager.CoreBusiness.MaterialType
+  parent: SewingManager.CoreBusiness
+  href: SewingManager.CoreBusiness.MaterialType.html
+  name: MaterialType
+  nameWithType: MaterialType
+  fullName: SewingManager.CoreBusiness.MaterialType
+- uid: SewingManager.CoreBusiness
+  commentId: N:SewingManager.CoreBusiness
+  href: SewingManager.html
+  name: SewingManager.CoreBusiness
+  nameWithType: SewingManager.CoreBusiness
+  fullName: SewingManager.CoreBusiness
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html

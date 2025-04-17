@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.Webapp.ViewModels
+  commentId: N:SewingManager.Webapp.ViewModels
+  id: SewingManager.Webapp.ViewModels
+  children:
+  - SewingManager.Webapp.ViewModels.MaterialViewModel
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.Webapp.ViewModels
+  nameWithType: SewingManager.Webapp.ViewModels
+  fullName: SewingManager.Webapp.ViewModels
+  type: Namespace
+  assemblies:
+  - SewingManager.Webapp
+references:
+- uid: SewingManager.Webapp.ViewModels.MaterialViewModel
+  commentId: T:SewingManager.Webapp.ViewModels.MaterialViewModel
+  href: SewingManager.Webapp.ViewModels.MaterialViewModel.html
+  name: MaterialViewModel
+  nameWithType: MaterialViewModel
+  fullName: SewingManager.Webapp.ViewModels.MaterialViewModel

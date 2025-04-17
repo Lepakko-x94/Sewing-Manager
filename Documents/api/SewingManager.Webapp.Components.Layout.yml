@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.Webapp.Components.Layout
+  commentId: N:SewingManager.Webapp.Components.Layout
+  id: SewingManager.Webapp.Components.Layout
+  children:
+  - SewingManager.Webapp.Components.Layout.MainLayout
+  - SewingManager.Webapp.Components.Layout.NavMenu
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.Webapp.Components.Layout
+  nameWithType: SewingManager.Webapp.Components.Layout
+  fullName: SewingManager.Webapp.Components.Layout
+  type: Namespace
+  assemblies:
+  - SewingManager.Webapp
+references:
+- uid: SewingManager.Webapp.Components.Layout.NavMenu
+  commentId: T:SewingManager.Webapp.Components.Layout.NavMenu
+  href: SewingManager.Webapp.Components.Layout.NavMenu.html
+  name: NavMenu
+  nameWithType: NavMenu
+  fullName: SewingManager.Webapp.Components.Layout.NavMenu
+- uid: SewingManager.Webapp.Components.Layout.MainLayout
+  commentId: T:SewingManager.Webapp.Components.Layout.MainLayout
+  href: SewingManager.Webapp.Components.Layout.MainLayout.html
+  name: MainLayout
+  nameWithType: MainLayout
+  fullName: SewingManager.Webapp.Components.Layout.MainLayout

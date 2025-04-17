@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+  id: IDeleteMaterialUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  children:
+  - SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IDeleteMaterialUseCase
+  nameWithType: IDeleteMaterialUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+  type: Interface
+  source:
+    remote:
+      path: SewingManager.UseCases/Materials/Interfaces/IDeleteMaterialUseCase.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: IDeleteMaterialUseCase
+    path: ../SewingManager.UseCases/Materials/Interfaces/IDeleteMaterialUseCase.cs
+    startLine: 5
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.Materials.Interfaces
+  summary: Інтерфейс для видалення матеріалу з системи.
+  example: []
+  syntax:
+    content: public interface IDeleteMaterialUseCase
+    content.vb: Public Interface IDeleteMaterialUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync(System.Int32)
+  commentId: M:SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync(System.Int32)
+  id: ExecuteAsync(System.Int32)
+  parent: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(int)
+  nameWithType: IDeleteMaterialUseCase.ExecuteAsync(int)
+  fullName: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync(int)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/Materials/Interfaces/IDeleteMaterialUseCase.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: ExecuteAsync
+    path: ../SewingManager.UseCases/Materials/Interfaces/IDeleteMaterialUseCase.cs
+    startLine: 17
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.Materials.Interfaces
+  summary: Виконує операцію видалення матеріалу за його ідентифікатором.
+  remarks: Цей метод забезпечує видалення матеріалу з системи за допомогою наданого ідентифікатора.
+  example: []
+  syntax:
+    content: Task ExecuteAsync(int materialId)
+    parameters:
+    - id: materialId
+      type: System.Int32
+      description: Ідентифікатор матеріалу, який потрібно видалити.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Завдання, яке виконується асинхронно.
+    content.vb: Function ExecuteAsync(materialId As Integer) As Task
+  overload: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync*
+  nameWithType.vb: IDeleteMaterialUseCase.ExecuteAsync(Integer)
+  fullName.vb: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync(Integer)
+  name.vb: ExecuteAsync(Integer)
+references:
+- uid: SewingManager.UseCases.Materials.Interfaces
+  commentId: N:SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.html
+  name: SewingManager.UseCases.Materials.Interfaces
+  nameWithType: SewingManager.UseCases.Materials.Interfaces
+  fullName: SewingManager.UseCases.Materials.Interfaces
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+- uid: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync*
+  commentId: Overload:SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync
+  href: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.html#SewingManager_UseCases_Materials_Interfaces_IDeleteMaterialUseCase_ExecuteAsync_System_Int32_
+  name: ExecuteAsync
+  nameWithType: IDeleteMaterialUseCase.ExecuteAsync
+  fullName: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.ExecuteAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

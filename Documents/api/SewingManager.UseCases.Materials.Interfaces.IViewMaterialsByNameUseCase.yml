@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+  id: IViewMaterialsByNameUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  children:
+  - SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IViewMaterialsByNameUseCase
+  nameWithType: IViewMaterialsByNameUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+  type: Interface
+  source:
+    remote:
+      path: SewingManager.UseCases/Materials/Interfaces/IViewMaterialsByNameUseCase.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: IViewMaterialsByNameUseCase
+    path: ../SewingManager.UseCases/Materials/Interfaces/IViewMaterialsByNameUseCase.cs
+    startLine: 7
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.Materials.Interfaces
+  summary: Інтерфейс для перегляду матеріалів за їх іменем.
+  example: []
+  syntax:
+    content: public interface IViewMaterialsByNameUseCase
+    content.vb: Public Interface IViewMaterialsByNameUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync(System.String)
+  commentId: M:SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync(System.String)
+  id: ExecuteAsync(System.String)
+  parent: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(string)
+  nameWithType: IViewMaterialsByNameUseCase.ExecuteAsync(string)
+  fullName: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync(string)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/Materials/Interfaces/IViewMaterialsByNameUseCase.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: ExecuteAsync
+    path: ../SewingManager.UseCases/Materials/Interfaces/IViewMaterialsByNameUseCase.cs
+    startLine: 20
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.Materials.Interfaces
+  summary: Виконує операцію отримання матеріалів за їх іменем.
+  remarks: >-
+    Цей метод дозволяє отримати матеріали, відфільтровані за ім'ям.
+
+    Якщо параметр <code class="paramref">name</code> не вказано або порожній, будуть повернуті всі матеріали.
+  example: []
+  syntax:
+    content: Task<IEnumerable<Material>> ExecuteAsync(string name = "")
+    parameters:
+    - id: name
+      type: System.String
+      description: Ім'я матеріалу для фільтрації результатів. Якщо не вказано, повертаються всі матеріали.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.Material}}
+      description: Завдання, яке повертає колекцію матеріалів, що відповідають вказаному імені.
+    content.vb: Function ExecuteAsync(name As String = "") As Task(Of IEnumerable(Of Material))
+  overload: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync*
+  nameWithType.vb: IViewMaterialsByNameUseCase.ExecuteAsync(String)
+  fullName.vb: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync(String)
+  name.vb: ExecuteAsync(String)
+references:
+- uid: SewingManager.UseCases.Materials.Interfaces
+  commentId: N:SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.html
+  name: SewingManager.UseCases.Materials.Interfaces
+  nameWithType: SewingManager.UseCases.Materials.Interfaces
+  fullName: SewingManager.UseCases.Materials.Interfaces
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+- uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync*
+  commentId: Overload:SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync
+  href: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.html#SewingManager_UseCases_Materials_Interfaces_IViewMaterialsByNameUseCase_ExecuteAsync_System_String_
+  name: ExecuteAsync
+  nameWithType: IViewMaterialsByNameUseCase.ExecuteAsync
+  fullName: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.ExecuteAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.Material}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.Material}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Material>>
+  nameWithType: Task<IEnumerable<Material>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<SewingManager.CoreBusiness.Material>>
+  nameWithType.vb: Task(Of IEnumerable(Of Material))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of SewingManager.CoreBusiness.Material))
+  name.vb: Task(Of IEnumerable(Of Material))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SewingManager.CoreBusiness.Material
+    name: Material
+    href: SewingManager.CoreBusiness.Material.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SewingManager.CoreBusiness.Material
+    name: Material
+    href: SewingManager.CoreBusiness.Material.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

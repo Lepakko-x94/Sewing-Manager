@@ -1,0 +1,297 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+  id: IFileStorageService
+  parent: SewingManager.UseCases.Materials.Interfaces
+  children:
+  - SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync(Microsoft.AspNetCore.Components.Forms.IBrowserFile,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IFileStorageService
+  nameWithType: IFileStorageService
+  fullName: SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+  type: Interface
+  source:
+    remote:
+      path: SewingManager.UseCases/Materials/Interfaces/IFileStorageService.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: IFileStorageService
+    path: ../SewingManager.UseCases/Materials/Interfaces/IFileStorageService.cs
+    startLine: 7
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.Materials.Interfaces
+  summary: Інтерфейс для зберігання файлів на сервері.
+  example: []
+  syntax:
+    content: public interface IFileStorageService
+    content.vb: Public Interface IFileStorageService
+- uid: SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync(Microsoft.AspNetCore.Components.Forms.IBrowserFile,System.Int32,System.Int32)
+  commentId: M:SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync(Microsoft.AspNetCore.Components.Forms.IBrowserFile,System.Int32,System.Int32)
+  id: SaveImageAsync(Microsoft.AspNetCore.Components.Forms.IBrowserFile,System.Int32,System.Int32)
+  parent: SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+  langs:
+  - csharp
+  - vb
+  name: SaveImageAsync(IBrowserFile, int, int)
+  nameWithType: IFileStorageService.SaveImageAsync(IBrowserFile, int, int)
+  fullName: SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync(Microsoft.AspNetCore.Components.Forms.IBrowserFile, int, int)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/Materials/Interfaces/IFileStorageService.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: SaveImageAsync
+    path: ../SewingManager.UseCases/Materials/Interfaces/IFileStorageService.cs
+    startLine: 22
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.Materials.Interfaces
+  summary: Зберігає зображення на сервері після його зміни розміру до заданих розмірів.
+  remarks: Цей метод зберігає файл з унікальним ім'ям у директорії для зображень на сервері.
+  example: []
+  syntax:
+    content: Task<string?> SaveImageAsync(IBrowserFile file, int maxWidth, int maxHeight)
+    parameters:
+    - id: file
+      type: Microsoft.AspNetCore.Components.Forms.IBrowserFile
+      description: Завантажене зображення з браузера.
+    - id: maxWidth
+      type: System.Int32
+      description: Максимальна ширина для зміненої картинки.
+    - id: maxHeight
+      type: System.Int32
+      description: Максимальна висота для зміненої картинки.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: >-
+        Відносна URL-адреса збереженого зображення (наприклад, "/images/унікальне-ім'я.jpg"), 
+
+        або <code>null</code>, якщо файл є <code>null</code>.
+    content.vb: Function SaveImageAsync(file As IBrowserFile, maxWidth As Integer, maxHeight As Integer) As Task(Of String)
+  overload: SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync*
+  nameWithType.vb: IFileStorageService.SaveImageAsync(IBrowserFile, Integer, Integer)
+  fullName.vb: SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync(Microsoft.AspNetCore.Components.Forms.IBrowserFile, Integer, Integer)
+  name.vb: SaveImageAsync(IBrowserFile, Integer, Integer)
+references:
+- uid: SewingManager.UseCases.Materials.Interfaces
+  commentId: N:SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.html
+  name: SewingManager.UseCases.Materials.Interfaces
+  nameWithType: SewingManager.UseCases.Materials.Interfaces
+  fullName: SewingManager.UseCases.Materials.Interfaces
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+- uid: SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync*
+  commentId: Overload:SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync
+  href: SewingManager.UseCases.Materials.Interfaces.IFileStorageService.html#SewingManager_UseCases_Materials_Interfaces_IFileStorageService_SaveImageAsync_Microsoft_AspNetCore_Components_Forms_IBrowserFile_System_Int32_System_Int32_
+  name: SaveImageAsync
+  nameWithType: IFileStorageService.SaveImageAsync
+  fullName: SewingManager.UseCases.Materials.Interfaces.IFileStorageService.SaveImageAsync
+- uid: Microsoft.AspNetCore.Components.Forms.IBrowserFile
+  commentId: T:Microsoft.AspNetCore.Components.Forms.IBrowserFile
+  parent: Microsoft.AspNetCore.Components.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms.ibrowserfile
+  name: IBrowserFile
+  nameWithType: IBrowserFile
+  fullName: Microsoft.AspNetCore.Components.Forms.IBrowserFile
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.AspNetCore.Components.Forms
+  commentId: N:Microsoft.AspNetCore.Components.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Components.Forms
+  nameWithType: Microsoft.AspNetCore.Components.Forms
+  fullName: Microsoft.AspNetCore.Components.Forms
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Components
+    name: Components
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components
+  - name: .
+  - uid: Microsoft.AspNetCore.Components.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.components.forms
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.Webapp.Components.Pages
+  commentId: N:SewingManager.Webapp.Components.Pages
+  id: SewingManager.Webapp.Components.Pages
+  children:
+  - SewingManager.Webapp.Components.Pages.Error
+  - SewingManager.Webapp.Components.Pages.Home
+  - SewingManager.Webapp.Components.Pages.Weather
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.Webapp.Components.Pages
+  nameWithType: SewingManager.Webapp.Components.Pages
+  fullName: SewingManager.Webapp.Components.Pages
+  type: Namespace
+  assemblies:
+  - SewingManager.Webapp
+references:
+- uid: SewingManager.Webapp.Components.Pages.Home
+  commentId: T:SewingManager.Webapp.Components.Pages.Home
+  href: SewingManager.Webapp.Components.Pages.Home.html
+  name: Home
+  nameWithType: Home
+  fullName: SewingManager.Webapp.Components.Pages.Home
+- uid: SewingManager.Webapp.Components.Pages.Error
+  commentId: T:SewingManager.Webapp.Components.Pages.Error
+  href: SewingManager.Webapp.Components.Pages.Error.html
+  name: Error
+  nameWithType: Error
+  fullName: SewingManager.Webapp.Components.Pages.Error
+- uid: SewingManager.Webapp.Components.Pages.Weather
+  commentId: T:SewingManager.Webapp.Components.Pages.Weather
+  href: SewingManager.Webapp.Components.Pages.Weather.html
+  name: Weather
+  nameWithType: Weather
+  fullName: SewingManager.Webapp.Components.Pages.Weather

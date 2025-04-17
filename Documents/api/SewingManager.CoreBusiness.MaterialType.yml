@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.CoreBusiness.MaterialType
+  commentId: T:SewingManager.CoreBusiness.MaterialType
+  id: MaterialType
+  parent: SewingManager.CoreBusiness
+  children:
+  - SewingManager.CoreBusiness.MaterialType.Cut
+  - SewingManager.CoreBusiness.MaterialType.Piece
+  langs:
+  - csharp
+  - vb
+  name: MaterialType
+  nameWithType: MaterialType
+  fullName: SewingManager.CoreBusiness.MaterialType
+  type: Enum
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/MaterialType.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: MaterialType
+    path: ../SewingManager.CoreBusiness/MaterialType.cs
+    startLine: 8
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Перелік типів матеріалів.
+  example: []
+  syntax:
+    content: public enum MaterialType
+    content.vb: Public Enum MaterialType
+- uid: SewingManager.CoreBusiness.MaterialType.Piece
+  commentId: F:SewingManager.CoreBusiness.MaterialType.Piece
+  id: Piece
+  parent: SewingManager.CoreBusiness.MaterialType
+  langs:
+  - csharp
+  - vb
+  name: Piece
+  nameWithType: MaterialType.Piece
+  fullName: SewingManager.CoreBusiness.MaterialType.Piece
+  type: Field
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/MaterialType.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: Piece
+    path: ../SewingManager.CoreBusiness/MaterialType.cs
+    startLine: 13
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: 'Тип матеріалу: Штучний (Piece).'
+  example: []
+  syntax:
+    content: >-
+      [Display(Name = "Штучний")]
+
+      Piece = 0
+    return:
+      type: SewingManager.CoreBusiness.MaterialType
+    content.vb: >-
+      <Display(Name:="Штучний")>
+
+      Piece = 0
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Штучний
+- uid: SewingManager.CoreBusiness.MaterialType.Cut
+  commentId: F:SewingManager.CoreBusiness.MaterialType.Cut
+  id: Cut
+  parent: SewingManager.CoreBusiness.MaterialType
+  langs:
+  - csharp
+  - vb
+  name: Cut
+  nameWithType: MaterialType.Cut
+  fullName: SewingManager.CoreBusiness.MaterialType.Cut
+  type: Field
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/MaterialType.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: Cut
+    path: ../SewingManager.CoreBusiness/MaterialType.cs
+    startLine: 19
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: 'Тип матеріалу: Відрізний (Cut).'
+  example: []
+  syntax:
+    content: >-
+      [Display(Name = "Відрізний")]
+
+      Cut = 1
+    return:
+      type: SewingManager.CoreBusiness.MaterialType
+    content.vb: >-
+      <Display(Name:="Відрізний")>
+
+      Cut = 1
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Відрізний
+references:
+- uid: SewingManager.CoreBusiness
+  commentId: N:SewingManager.CoreBusiness
+  href: SewingManager.html
+  name: SewingManager.CoreBusiness
+  nameWithType: SewingManager.CoreBusiness
+  fullName: SewingManager.CoreBusiness
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+- uid: SewingManager.CoreBusiness.MaterialType
+  commentId: T:SewingManager.CoreBusiness.MaterialType
+  parent: SewingManager.CoreBusiness
+  href: SewingManager.CoreBusiness.MaterialType.html
+  name: MaterialType
+  nameWithType: MaterialType
+  fullName: SewingManager.CoreBusiness.MaterialType

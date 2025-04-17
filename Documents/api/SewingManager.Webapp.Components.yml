@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.Webapp.Components
+  commentId: N:SewingManager.Webapp.Components
+  id: SewingManager.Webapp.Components
+  children:
+  - SewingManager.Webapp.Components.App
+  - SewingManager.Webapp.Components.Routes
+  - SewingManager.Webapp.Components._Imports
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.Webapp.Components
+  nameWithType: SewingManager.Webapp.Components
+  fullName: SewingManager.Webapp.Components
+  type: Namespace
+  assemblies:
+  - SewingManager.Webapp
+references:
+- uid: SewingManager.Webapp.Components.App
+  commentId: T:SewingManager.Webapp.Components.App
+  href: SewingManager.Webapp.Components.App.html
+  name: App
+  nameWithType: App
+  fullName: SewingManager.Webapp.Components.App
+- uid: SewingManager.Webapp.Components.Routes
+  commentId: T:SewingManager.Webapp.Components.Routes
+  href: SewingManager.Webapp.Components.Routes.html
+  name: Routes
+  nameWithType: Routes
+  fullName: SewingManager.Webapp.Components.Routes
+- uid: SewingManager.Webapp.Components._Imports
+  commentId: T:SewingManager.Webapp.Components._Imports
+  href: SewingManager.Webapp.Components._Imports.html
+  name: _Imports
+  nameWithType: _Imports
+  fullName: SewingManager.Webapp.Components._Imports

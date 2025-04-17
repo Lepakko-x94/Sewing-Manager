@@ -1,0 +1,166 @@
+### YamlMime:TableOfContent
+items:
+- uid: SewingManager.CoreBusiness
+  name: SewingManager.CoreBusiness
+  type: Namespace
+  items:
+  - uid: SewingManager.CoreBusiness.Material
+    name: Material
+    type: Class
+  - uid: SewingManager.CoreBusiness.MaterialCategory
+    name: MaterialCategory
+    type: Class
+  - uid: SewingManager.CoreBusiness.MaterialType
+    name: MaterialType
+    type: Enum
+- uid: SewingManager.Infrastructure
+  name: SewingManager.Infrastructure
+  type: Namespace
+  items:
+  - uid: SewingManager.Infrastructure.FileStorageService
+    name: FileStorageService
+    type: Class
+- uid: SewingManager.UseCases.Materials
+  name: SewingManager.UseCases.Materials
+  type: Namespace
+  items:
+  - uid: SewingManager.UseCases.Materials.AddMaterialUseCase
+    name: AddMaterialUseCase
+    type: Class
+  - uid: SewingManager.UseCases.Materials.DeleteMaterialUseCase
+    name: DeleteMaterialUseCase
+    type: Class
+  - uid: SewingManager.UseCases.Materials.EditMaterialUseCase
+    name: EditMaterialUseCase
+    type: Class
+  - uid: SewingManager.UseCases.Materials.ViewMaterialByIdUseCase
+    name: ViewMaterialByIdUseCase
+    type: Class
+  - uid: SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase
+    name: ViewMaterialCategoriesByNameUseCase
+    type: Class
+  - uid: SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase
+    name: ViewMaterialsByNameUseCase
+    type: Class
+- uid: SewingManager.UseCases.Materials.Interfaces
+  name: SewingManager.UseCases.Materials.Interfaces
+  type: Namespace
+  items:
+  - uid: SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase
+    name: IAddMaterialUseCase
+    type: Interface
+  - uid: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+    name: IDeleteMaterialUseCase
+    type: Interface
+  - uid: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+    name: IEditMaterialUseCase
+    type: Interface
+  - uid: SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+    name: IFileStorageService
+    type: Interface
+  - uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase
+    name: IViewMaterialByIdUseCase
+    type: Interface
+  - uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase
+    name: IViewMaterialCategoriesByNameUseCase
+    type: Interface
+  - uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+    name: IViewMaterialsByNameUseCase
+    type: Interface
+- uid: SewingManager.UseCases.PluginInterfaces
+  name: SewingManager.UseCases.PluginInterfaces
+  type: Namespace
+  items:
+  - uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+    name: IMaterialRepository
+    type: Interface
+- uid: SewingManager.Webapp.Components
+  name: SewingManager.Webapp.Components
+  type: Namespace
+  items:
+  - uid: SewingManager.Webapp.Components.App
+    name: App
+    type: Class
+  - uid: SewingManager.Webapp.Components.Routes
+    name: Routes
+    type: Class
+  - uid: SewingManager.Webapp.Components._Imports
+    name: _Imports
+    type: Class
+- uid: SewingManager.Webapp.Components.Controls.Common
+  name: SewingManager.Webapp.Components.Controls.Common
+  type: Namespace
+  items:
+  - uid: SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent`1
+    name: EnumToggleComponent<TEnum>
+    type: Class
+  - uid: SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent
+    name: ImageUploaderComponent
+    type: Class
+  - uid: SewingManager.Webapp.Components.Controls.Common.MaterialListComponent
+    name: MaterialListComponent
+    type: Class
+  - uid: SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent
+    name: MaterialListItemComponent
+    type: Class
+  - uid: SewingManager.Webapp.Components.Controls.Common.SearchComponent
+    name: SearchComponent
+    type: Class
+- uid: SewingManager.Webapp.Components.Layout
+  name: SewingManager.Webapp.Components.Layout
+  type: Namespace
+  items:
+  - uid: SewingManager.Webapp.Components.Layout.MainLayout
+    name: MainLayout
+    type: Class
+  - uid: SewingManager.Webapp.Components.Layout.NavMenu
+    name: NavMenu
+    type: Class
+- uid: SewingManager.Webapp.Components.Pages
+  name: SewingManager.Webapp.Components.Pages
+  type: Namespace
+  items:
+  - uid: SewingManager.Webapp.Components.Pages.Error
+    name: Error
+    type: Class
+  - uid: SewingManager.Webapp.Components.Pages.Home
+    name: Home
+    type: Class
+  - uid: SewingManager.Webapp.Components.Pages.Weather
+    name: Weather
+    type: Class
+- uid: SewingManager.Webapp.Components.Pages.Materials
+  name: SewingManager.Webapp.Components.Pages.Materials
+  type: Namespace
+  items:
+  - uid: SewingManager.Webapp.Components.Pages.Materials.AddMaterial
+    name: AddMaterial
+    type: Class
+  - uid: SewingManager.Webapp.Components.Pages.Materials.EditMaterial
+    name: EditMaterial
+    type: Class
+  - uid: SewingManager.Webapp.Components.Pages.Materials.MaterialList
+    name: MaterialList
+    type: Class
+- uid: SewingManager.Webapp.ViewModels
+  name: SewingManager.Webapp.ViewModels
+  type: Namespace
+  items:
+  - uid: SewingManager.Webapp.ViewModels.MaterialViewModel
+    name: MaterialViewModel
+    type: Class
+- uid: SewingManager.Webapp.ViewModelsValidations
+  name: SewingManager.Webapp.ViewModelsValidations
+  type: Namespace
+  items:
+  - uid: SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute
+    name: Material_QuantityValidationByTypeAttribute
+    type: Class
+- uid: SewingManger.Plugins.InMemory
+  name: SewingManger.Plugins.InMemory
+  type: Namespace
+  items:
+  - uid: SewingManger.Plugins.InMemory.MaterialRepository
+    name: MaterialRepository
+    type: Class
+memberLayout: SamePage

@@ -1,0 +1,796 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.CoreBusiness.Material
+  commentId: T:SewingManager.CoreBusiness.Material
+  id: Material
+  parent: SewingManager.CoreBusiness
+  children:
+  - SewingManager.CoreBusiness.Material.CategoryId
+  - SewingManager.CoreBusiness.Material.Description
+  - SewingManager.CoreBusiness.Material.ImageUrl
+  - SewingManager.CoreBusiness.Material.MaterialCategory
+  - SewingManager.CoreBusiness.Material.MaterialCode
+  - SewingManager.CoreBusiness.Material.MaterialId
+  - SewingManager.CoreBusiness.Material.Name
+  - SewingManager.CoreBusiness.Material.Price
+  - SewingManager.CoreBusiness.Material.Quantity
+  - SewingManager.CoreBusiness.Material.Type
+  langs:
+  - csharp
+  - vb
+  name: Material
+  nameWithType: Material
+  fullName: SewingManager.CoreBusiness.Material
+  type: Class
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: Material
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 8
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Клас, який представляє матеріал у системі.
+  example: []
+  syntax:
+    content: public class Material
+    content.vb: Public Class Material
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SewingManager.CoreBusiness.Material.MaterialId
+  commentId: P:SewingManager.CoreBusiness.Material.MaterialId
+  id: MaterialId
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: MaterialId
+  nameWithType: Material.MaterialId
+  fullName: SewingManager.CoreBusiness.Material.MaterialId
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: MaterialId
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 13
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Унікальний ідентифікатор матеріалу.
+  example: []
+  syntax:
+    content: public int MaterialId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaterialId As Integer
+  overload: SewingManager.CoreBusiness.Material.MaterialId*
+- uid: SewingManager.CoreBusiness.Material.MaterialCode
+  commentId: P:SewingManager.CoreBusiness.Material.MaterialCode
+  id: MaterialCode
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: MaterialCode
+  nameWithType: Material.MaterialCode
+  fullName: SewingManager.CoreBusiness.Material.MaterialCode
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: MaterialCode
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 18
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Код матеріалу, що є обов'язковим полем для кожного матеріалу.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public string MaterialCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Property MaterialCode As String
+  overload: SewingManager.CoreBusiness.Material.MaterialCode*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: SewingManager.CoreBusiness.Material.CategoryId
+  commentId: P:SewingManager.CoreBusiness.Material.CategoryId
+  id: CategoryId
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: CategoryId
+  nameWithType: Material.CategoryId
+  fullName: SewingManager.CoreBusiness.Material.CategoryId
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: CategoryId
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 24
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Ідентифікатор категорії матеріалу. За замовчуванням порожній рядок.
+  example: []
+  syntax:
+    content: public string CategoryId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CategoryId As String
+  overload: SewingManager.CoreBusiness.Material.CategoryId*
+- uid: SewingManager.CoreBusiness.Material.Name
+  commentId: P:SewingManager.CoreBusiness.Material.Name
+  id: Name
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Material.Name
+  fullName: SewingManager.CoreBusiness.Material.Name
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: Name
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 29
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Назва матеріалу. Це обов'язкове поле з обмеженням довжини до 150 символів.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [StringLength(150)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <StringLength(150)>
+
+      Public Property Name As String
+  overload: SewingManager.CoreBusiness.Material.Name*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 150
+- uid: SewingManager.CoreBusiness.Material.Description
+  commentId: P:SewingManager.CoreBusiness.Material.Description
+  id: Description
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Material.Description
+  fullName: SewingManager.CoreBusiness.Material.Description
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: Description
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 36
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Опис матеріалу. За замовчуванням порожній рядок.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: SewingManager.CoreBusiness.Material.Description*
+- uid: SewingManager.CoreBusiness.Material.Type
+  commentId: P:SewingManager.CoreBusiness.Material.Type
+  id: Type
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Material.Type
+  fullName: SewingManager.CoreBusiness.Material.Type
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: Type
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 41
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Тип матеріалу. Це обов'язкове поле.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public MaterialType Type { get; set; }
+    parameters: []
+    return:
+      type: SewingManager.CoreBusiness.MaterialType
+    content.vb: >-
+      <Required>
+
+      Public Property Type As MaterialType
+  overload: SewingManager.CoreBusiness.Material.Type*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: SewingManager.CoreBusiness.Material.Quantity
+  commentId: P:SewingManager.CoreBusiness.Material.Quantity
+  id: Quantity
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: Quantity
+  nameWithType: Material.Quantity
+  fullName: SewingManager.CoreBusiness.Material.Quantity
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: Quantity
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 47
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Кількість одиниць матеріалу на складі. Це обов'язкове поле.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public double Quantity { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <Required>
+
+      Public Property Quantity As Double
+  overload: SewingManager.CoreBusiness.Material.Quantity*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: SewingManager.CoreBusiness.Material.Price
+  commentId: P:SewingManager.CoreBusiness.Material.Price
+  id: Price
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: Price
+  nameWithType: Material.Price
+  fullName: SewingManager.CoreBusiness.Material.Price
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: Price
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 53
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Ціна за одиницю матеріалу. Це обов'язкове поле.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public double Price { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <Required>
+
+      Public Property Price As Double
+  overload: SewingManager.CoreBusiness.Material.Price*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: SewingManager.CoreBusiness.Material.ImageUrl
+  commentId: P:SewingManager.CoreBusiness.Material.ImageUrl
+  id: ImageUrl
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: ImageUrl
+  nameWithType: Material.ImageUrl
+  fullName: SewingManager.CoreBusiness.Material.ImageUrl
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: ImageUrl
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 59
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: URL зображення матеріалу (якщо є).
+  example: []
+  syntax:
+    content: public string? ImageUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ImageUrl As String
+  overload: SewingManager.CoreBusiness.Material.ImageUrl*
+- uid: SewingManager.CoreBusiness.Material.MaterialCategory
+  commentId: P:SewingManager.CoreBusiness.Material.MaterialCategory
+  id: MaterialCategory
+  parent: SewingManager.CoreBusiness.Material
+  langs:
+  - csharp
+  - vb
+  name: MaterialCategory
+  nameWithType: Material.MaterialCategory
+  fullName: SewingManager.CoreBusiness.Material.MaterialCategory
+  type: Property
+  source:
+    remote:
+      path: SewingManager.CoreBusiness/Material.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: MaterialCategory
+    path: ../SewingManager.CoreBusiness/Material.cs
+    startLine: 64
+  assemblies:
+  - SewingManager.CoreBusiness
+  namespace: SewingManager.CoreBusiness
+  summary: Категорія матеріалу. Цей властивість не серіалізується в JSON.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public MaterialCategory MaterialCategory { get; set; }
+    parameters: []
+    return:
+      type: SewingManager.CoreBusiness.MaterialCategory
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property MaterialCategory As MaterialCategory
+  overload: SewingManager.CoreBusiness.Material.MaterialCategory*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+references:
+- uid: SewingManager.CoreBusiness
+  commentId: N:SewingManager.CoreBusiness
+  href: SewingManager.html
+  name: SewingManager.CoreBusiness
+  nameWithType: SewingManager.CoreBusiness
+  fullName: SewingManager.CoreBusiness
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SewingManager.CoreBusiness.Material.MaterialId*
+  commentId: Overload:SewingManager.CoreBusiness.Material.MaterialId
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_MaterialId
+  name: MaterialId
+  nameWithType: Material.MaterialId
+  fullName: SewingManager.CoreBusiness.Material.MaterialId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SewingManager.CoreBusiness.Material.MaterialCode*
+  commentId: Overload:SewingManager.CoreBusiness.Material.MaterialCode
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_MaterialCode
+  name: MaterialCode
+  nameWithType: Material.MaterialCode
+  fullName: SewingManager.CoreBusiness.Material.MaterialCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SewingManager.CoreBusiness.Material.CategoryId*
+  commentId: Overload:SewingManager.CoreBusiness.Material.CategoryId
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_CategoryId
+  name: CategoryId
+  nameWithType: Material.CategoryId
+  fullName: SewingManager.CoreBusiness.Material.CategoryId
+- uid: SewingManager.CoreBusiness.Material.Name*
+  commentId: Overload:SewingManager.CoreBusiness.Material.Name
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_Name
+  name: Name
+  nameWithType: Material.Name
+  fullName: SewingManager.CoreBusiness.Material.Name
+- uid: SewingManager.CoreBusiness.Material.Description*
+  commentId: Overload:SewingManager.CoreBusiness.Material.Description
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_Description
+  name: Description
+  nameWithType: Material.Description
+  fullName: SewingManager.CoreBusiness.Material.Description
+- uid: SewingManager.CoreBusiness.Material.Type*
+  commentId: Overload:SewingManager.CoreBusiness.Material.Type
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_Type
+  name: Type
+  nameWithType: Material.Type
+  fullName: SewingManager.CoreBusiness.Material.Type
+- uid: SewingManager.CoreBusiness.MaterialType
+  commentId: T:SewingManager.CoreBusiness.MaterialType
+  parent: SewingManager.CoreBusiness
+  href: SewingManager.CoreBusiness.MaterialType.html
+  name: MaterialType
+  nameWithType: MaterialType
+  fullName: SewingManager.CoreBusiness.MaterialType
+- uid: SewingManager.CoreBusiness.Material.Quantity*
+  commentId: Overload:SewingManager.CoreBusiness.Material.Quantity
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_Quantity
+  name: Quantity
+  nameWithType: Material.Quantity
+  fullName: SewingManager.CoreBusiness.Material.Quantity
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SewingManager.CoreBusiness.Material.Price*
+  commentId: Overload:SewingManager.CoreBusiness.Material.Price
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_Price
+  name: Price
+  nameWithType: Material.Price
+  fullName: SewingManager.CoreBusiness.Material.Price
+- uid: SewingManager.CoreBusiness.Material.ImageUrl*
+  commentId: Overload:SewingManager.CoreBusiness.Material.ImageUrl
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_ImageUrl
+  name: ImageUrl
+  nameWithType: Material.ImageUrl
+  fullName: SewingManager.CoreBusiness.Material.ImageUrl
+- uid: SewingManager.CoreBusiness.Material.MaterialCategory*
+  commentId: Overload:SewingManager.CoreBusiness.Material.MaterialCategory
+  href: SewingManager.CoreBusiness.Material.html#SewingManager_CoreBusiness_Material_MaterialCategory
+  name: MaterialCategory
+  nameWithType: Material.MaterialCategory
+  fullName: SewingManager.CoreBusiness.Material.MaterialCategory
+- uid: SewingManager.CoreBusiness.MaterialCategory
+  commentId: T:SewingManager.CoreBusiness.MaterialCategory
+  parent: SewingManager.CoreBusiness
+  href: SewingManager.CoreBusiness.MaterialCategory.html
+  name: MaterialCategory
+  nameWithType: MaterialCategory
+  fullName: SewingManager.CoreBusiness.MaterialCategory

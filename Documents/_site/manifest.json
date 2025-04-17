@@ -1,0 +1,828 @@
+{
+  "source_base_path": "E:/Универ/model_repos/sm clone/Documents",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.CoreBusiness.Material.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.CoreBusiness.Material.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.CoreBusiness.Material",
+      "Summary": "<p sourcefile=\"api/SewingManager.CoreBusiness.Material.yml\" sourcestartlinenumber=\"1\">Клас, який представляє матеріал у системі.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.CoreBusiness.MaterialCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.CoreBusiness.MaterialCategory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.CoreBusiness.MaterialCategory",
+      "Summary": "<p sourcefile=\"api/SewingManager.CoreBusiness.MaterialCategory.yml\" sourcestartlinenumber=\"1\">Клас, який представляє категорію матеріалу в системі.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.CoreBusiness.MaterialType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.CoreBusiness.MaterialType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.CoreBusiness.MaterialType",
+      "Summary": "<p sourcefile=\"api/SewingManager.CoreBusiness.MaterialType.yml\" sourcestartlinenumber=\"1\">Перелік типів матеріалів.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.CoreBusiness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.CoreBusiness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.CoreBusiness",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Infrastructure.FileStorageService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Infrastructure.FileStorageService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Infrastructure.FileStorageService",
+      "Summary": "<p sourcefile=\"api/SewingManager.Infrastructure.FileStorageService.yml\" sourcestartlinenumber=\"1\">Сервіс для збереження зображень на файловій системі сервера.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Infrastructure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Infrastructure",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.AddMaterialUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.AddMaterialUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.AddMaterialUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.AddMaterialUseCase.yml\" sourcestartlinenumber=\"1\">Використовуваний випадок для додавання нового матеріалу до системи.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.DeleteMaterialUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.DeleteMaterialUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.DeleteMaterialUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.DeleteMaterialUseCase.yml\" sourcestartlinenumber=\"1\">Використовуваний випадок для видалення матеріалу з системи.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.EditMaterialUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.EditMaterialUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.EditMaterialUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.EditMaterialUseCase.yml\" sourcestartlinenumber=\"1\">Використовується для редагування матеріалів, включаючи оновлення зображень.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase.yml\" sourcestartlinenumber=\"1\">Інтерфейс для додавання нового матеріалу в систему.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.yml\" sourcestartlinenumber=\"1\">Інтерфейс для видалення матеріалу з системи.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.yml\" sourcestartlinenumber=\"1\">Інтерфейс для редагування інформації про матеріал у системі.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IFileStorageService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IFileStorageService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.Interfaces.IFileStorageService",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.Interfaces.IFileStorageService.yml\" sourcestartlinenumber=\"1\">Інтерфейс для зберігання файлів на сервері.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase.yml\" sourcestartlinenumber=\"1\">Інтерфейс для перегляду матеріалу за його ідентифікатором.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase.yml\" sourcestartlinenumber=\"1\">Інтерфейс для перегляду категорій матеріалів за їх ім'ям.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.yml\" sourcestartlinenumber=\"1\">Інтерфейс для перегляду матеріалів за їх іменем.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.ViewMaterialByIdUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.ViewMaterialByIdUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.ViewMaterialByIdUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.ViewMaterialByIdUseCase.yml\" sourcestartlinenumber=\"1\">Використовуваний випадок для перегляду матеріалу за його ідентифікатором.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase.yml\" sourcestartlinenumber=\"1\">Використовуваний випадок для перегляду категорій матеріалів за їх ім'ям.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase.yml\" sourcestartlinenumber=\"1\">Використовуваний випадок для перегляду матеріалів за їх іменем.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.Materials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.Materials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.Materials",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.PluginInterfaces.IMaterialRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.PluginInterfaces.IMaterialRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.PluginInterfaces.IMaterialRepository",
+      "Summary": "<p sourcefile=\"api/SewingManager.UseCases.PluginInterfaces.IMaterialRepository.yml\" sourcestartlinenumber=\"1\">Репозиторій для роботи з матеріалами.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.UseCases.PluginInterfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.UseCases.PluginInterfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.UseCases.PluginInterfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.App.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.App",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Controls.Common.EnumToggleComponent<TEnum>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Controls.Common.ImageUploaderComponent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Controls.Common.MaterialListComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Controls.Common.MaterialListComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Controls.Common.MaterialListComponent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Controls.Common.MaterialListItemComponent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Controls.Common.SearchComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Controls.Common.SearchComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Controls.Common.SearchComponent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Controls.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Controls.Common.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Controls.Common",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Layout.MainLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Layout.MainLayout.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Layout.MainLayout",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Layout.NavMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Layout.NavMenu.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Layout.NavMenu",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Layout.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Layout",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Pages.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Pages.Error.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Pages.Error",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Pages.Home.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Pages.Home.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Pages.Home",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Pages.Materials.AddMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Pages.Materials.AddMaterial.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Pages.Materials.AddMaterial",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Pages.Materials.EditMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Pages.Materials.EditMaterial.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Pages.Materials.EditMaterial",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Pages.Materials.MaterialList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Pages.Materials.MaterialList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Pages.Materials.MaterialList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Pages.Materials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Pages.Materials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Pages.Materials",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Pages.Weather.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Pages.Weather.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Pages.Weather",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Pages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Pages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.Routes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.Routes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components.Routes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components._Imports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components._Imports.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components._Imports",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.Components.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.Components.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.Components",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.ViewModels.MaterialViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.ViewModels.MaterialViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.ViewModels.MaterialViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.ViewModels.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.ViewModels",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute",
+      "Summary": "<p sourcefile=\"api/SewingManager.Webapp.ViewModelsValidations.Material_QuantityValidationByTypeAttribute.yml\" sourcestartlinenumber=\"1\">Атрибут валідації, що перевіряє кількість матеріалу в залежності від його типу.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManager.Webapp.ViewModelsValidations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManager.Webapp.ViewModelsValidations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManager.Webapp.ViewModelsValidations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManger.Plugins.InMemory.MaterialRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManger.Plugins.InMemory.MaterialRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManger.Plugins.InMemory.MaterialRepository",
+      "Summary": "<p sourcefile=\"api/SewingManger.Plugins.InMemory.MaterialRepository.yml\" sourcestartlinenumber=\"1\">Репозиторій для управління матеріалами та їх категоріями в пам'яті.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SewingManger.Plugins.InMemory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SewingManger.Plugins.InMemory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SewingManger.Plugins.InMemory",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/generate_docs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/generate_docs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/linting.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/linting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "generate_docs.md",
+      "output": {
+        ".html": {
+          "relative_path": "generate_docs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "linting.md",
+      "output": {
+        ".html": {
+          "relative_path": "linting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

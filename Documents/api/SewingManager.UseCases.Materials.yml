@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.UseCases.Materials
+  commentId: N:SewingManager.UseCases.Materials
+  id: SewingManager.UseCases.Materials
+  children:
+  - SewingManager.UseCases.Materials.AddMaterialUseCase
+  - SewingManager.UseCases.Materials.DeleteMaterialUseCase
+  - SewingManager.UseCases.Materials.EditMaterialUseCase
+  - SewingManager.UseCases.Materials.ViewMaterialByIdUseCase
+  - SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase
+  - SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.UseCases.Materials
+  nameWithType: SewingManager.UseCases.Materials
+  fullName: SewingManager.UseCases.Materials
+  type: Namespace
+  assemblies:
+  - SewingManager.UseCases
+references:
+- uid: SewingManager.UseCases.Materials.AddMaterialUseCase
+  commentId: T:SewingManager.UseCases.Materials.AddMaterialUseCase
+  href: SewingManager.UseCases.Materials.AddMaterialUseCase.html
+  name: AddMaterialUseCase
+  nameWithType: AddMaterialUseCase
+  fullName: SewingManager.UseCases.Materials.AddMaterialUseCase
+- uid: SewingManager.UseCases.Materials.DeleteMaterialUseCase
+  commentId: T:SewingManager.UseCases.Materials.DeleteMaterialUseCase
+  href: SewingManager.UseCases.Materials.DeleteMaterialUseCase.html
+  name: DeleteMaterialUseCase
+  nameWithType: DeleteMaterialUseCase
+  fullName: SewingManager.UseCases.Materials.DeleteMaterialUseCase
+- uid: SewingManager.UseCases.Materials.EditMaterialUseCase
+  commentId: T:SewingManager.UseCases.Materials.EditMaterialUseCase
+  href: SewingManager.UseCases.Materials.EditMaterialUseCase.html
+  name: EditMaterialUseCase
+  nameWithType: EditMaterialUseCase
+  fullName: SewingManager.UseCases.Materials.EditMaterialUseCase
+- uid: SewingManager.UseCases.Materials.ViewMaterialByIdUseCase
+  commentId: T:SewingManager.UseCases.Materials.ViewMaterialByIdUseCase
+  href: SewingManager.UseCases.Materials.ViewMaterialByIdUseCase.html
+  name: ViewMaterialByIdUseCase
+  nameWithType: ViewMaterialByIdUseCase
+  fullName: SewingManager.UseCases.Materials.ViewMaterialByIdUseCase
+- uid: SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase
+  commentId: T:SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase
+  href: SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase.html
+  name: ViewMaterialCategoriesByNameUseCase
+  nameWithType: ViewMaterialCategoriesByNameUseCase
+  fullName: SewingManager.UseCases.Materials.ViewMaterialCategoriesByNameUseCase
+- uid: SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase
+  commentId: T:SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase
+  href: SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase.html
+  name: ViewMaterialsByNameUseCase
+  nameWithType: ViewMaterialsByNameUseCase
+  fullName: SewingManager.UseCases.Materials.ViewMaterialsByNameUseCase

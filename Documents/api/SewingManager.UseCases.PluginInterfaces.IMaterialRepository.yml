@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  commentId: T:SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  id: IMaterialRepository
+  parent: SewingManager.UseCases.PluginInterfaces
+  children:
+  - SewingManager.UseCases.PluginInterfaces.IMaterialRepository.AddMaterialAsync(SewingManager.CoreBusiness.Material)
+  - SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync(System.Int32)
+  - SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync(System.Int32)
+  - SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase(System.String)
+  - SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync(System.String)
+  - SewingManager.UseCases.PluginInterfaces.IMaterialRepository.UpdateMaterialAsync(SewingManager.CoreBusiness.Material)
+  langs:
+  - csharp
+  - vb
+  name: IMaterialRepository
+  nameWithType: IMaterialRepository
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  type: Interface
+  source:
+    remote:
+      path: SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: IMaterialRepository
+    path: ../SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+    startLine: 7
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.PluginInterfaces
+  summary: Репозиторій для роботи з матеріалами.
+  example: []
+  syntax:
+    content: public interface IMaterialRepository
+    content.vb: Public Interface IMaterialRepository
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync(System.String)
+  commentId: M:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync(System.String)
+  id: GetMaterialsByNameAsync(System.String)
+  parent: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMaterialsByNameAsync(string)
+  nameWithType: IMaterialRepository.GetMaterialsByNameAsync(string)
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync(string)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: GetMaterialsByNameAsync
+    path: ../SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+    startLine: 16
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.PluginInterfaces
+  summary: Отримує матеріали за їх іменем.
+  example: []
+  syntax:
+    content: Task<IEnumerable<Material>> GetMaterialsByNameAsync(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Ім'я матеріалу для фільтрації результатів. Якщо не вказано, повертаються всі матеріали.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.Material}}
+      description: Завдання, яке повертає колекцію матеріалів, що відповідають вказаному імені.
+    content.vb: Function GetMaterialsByNameAsync(name As String) As Task(Of IEnumerable(Of Material))
+  overload: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync*
+  nameWithType.vb: IMaterialRepository.GetMaterialsByNameAsync(String)
+  fullName.vb: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync(String)
+  name.vb: GetMaterialsByNameAsync(String)
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync(System.Int32)
+  commentId: M:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync(System.Int32)
+  id: DeleteMaterialByIdAsync(System.Int32)
+  parent: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteMaterialByIdAsync(int)
+  nameWithType: IMaterialRepository.DeleteMaterialByIdAsync(int)
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync(int)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: DeleteMaterialByIdAsync
+    path: ../SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+    startLine: 25
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.PluginInterfaces
+  summary: Видаляє матеріал за його ідентифікатором.
+  example: []
+  syntax:
+    content: Task DeleteMaterialByIdAsync(int materialId)
+    parameters:
+    - id: materialId
+      type: System.Int32
+      description: Ідентифікатор матеріалу, який потрібно видалити.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Завдання, яке виконується асинхронно.
+    content.vb: Function DeleteMaterialByIdAsync(materialId As Integer) As Task
+  overload: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync*
+  nameWithType.vb: IMaterialRepository.DeleteMaterialByIdAsync(Integer)
+  fullName.vb: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync(Integer)
+  name.vb: DeleteMaterialByIdAsync(Integer)
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.AddMaterialAsync(SewingManager.CoreBusiness.Material)
+  commentId: M:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.AddMaterialAsync(SewingManager.CoreBusiness.Material)
+  id: AddMaterialAsync(SewingManager.CoreBusiness.Material)
+  parent: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  langs:
+  - csharp
+  - vb
+  name: AddMaterialAsync(Material)
+  nameWithType: IMaterialRepository.AddMaterialAsync(Material)
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.AddMaterialAsync(SewingManager.CoreBusiness.Material)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: AddMaterialAsync
+    path: ../SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+    startLine: 34
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.PluginInterfaces
+  summary: Додає новий матеріал.
+  example: []
+  syntax:
+    content: Task AddMaterialAsync(Material material)
+    parameters:
+    - id: material
+      type: SewingManager.CoreBusiness.Material
+      description: Об'єкт матеріалу, який потрібно додати.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Завдання, яке виконується асинхронно.
+    content.vb: Function AddMaterialAsync(material As Material) As Task
+  overload: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.AddMaterialAsync*
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase(System.String)
+  commentId: M:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase(System.String)
+  id: GetMaterialCategoriesByNameUseCase(System.String)
+  parent: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMaterialCategoriesByNameUseCase(string)
+  nameWithType: IMaterialRepository.GetMaterialCategoriesByNameUseCase(string)
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase(string)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: GetMaterialCategoriesByNameUseCase
+    path: ../SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+    startLine: 43
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.PluginInterfaces
+  summary: Отримує категорії матеріалів за їх іменем.
+  example: []
+  syntax:
+    content: Task<IEnumerable<MaterialCategory>> GetMaterialCategoriesByNameUseCase(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Ім'я категорії для фільтрації результатів. Якщо не вказано, повертаються всі категорії.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.MaterialCategory}}
+      description: Завдання, яке повертає колекцію категорій матеріалів, що відповідають вказаному імені.
+    content.vb: Function GetMaterialCategoriesByNameUseCase(name As String) As Task(Of IEnumerable(Of MaterialCategory))
+  overload: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase*
+  nameWithType.vb: IMaterialRepository.GetMaterialCategoriesByNameUseCase(String)
+  fullName.vb: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase(String)
+  name.vb: GetMaterialCategoriesByNameUseCase(String)
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync(System.Int32)
+  commentId: M:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync(System.Int32)
+  id: GetMaterialByIdAsync(System.Int32)
+  parent: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMaterialByIdAsync(int)
+  nameWithType: IMaterialRepository.GetMaterialByIdAsync(int)
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync(int)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: GetMaterialByIdAsync
+    path: ../SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+    startLine: 52
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.PluginInterfaces
+  summary: Отримує матеріал за його ідентифікатором.
+  example: []
+  syntax:
+    content: Task<Material> GetMaterialByIdAsync(int materialId)
+    parameters:
+    - id: materialId
+      type: System.Int32
+      description: Ідентифікатор матеріалу, який потрібно переглянути.
+    return:
+      type: System.Threading.Tasks.Task{SewingManager.CoreBusiness.Material}
+      description: Завдання, яке повертає матеріал за вказаним ідентифікатором.
+    content.vb: Function GetMaterialByIdAsync(materialId As Integer) As Task(Of Material)
+  overload: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync*
+  nameWithType.vb: IMaterialRepository.GetMaterialByIdAsync(Integer)
+  fullName.vb: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync(Integer)
+  name.vb: GetMaterialByIdAsync(Integer)
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.UpdateMaterialAsync(SewingManager.CoreBusiness.Material)
+  commentId: M:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.UpdateMaterialAsync(SewingManager.CoreBusiness.Material)
+  id: UpdateMaterialAsync(SewingManager.CoreBusiness.Material)
+  parent: SewingManager.UseCases.PluginInterfaces.IMaterialRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateMaterialAsync(Material)
+  nameWithType: IMaterialRepository.UpdateMaterialAsync(Material)
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.UpdateMaterialAsync(SewingManager.CoreBusiness.Material)
+  type: Method
+  source:
+    remote:
+      path: SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+      branch: master
+      repo: https://github.com/Lepakko-x94/Sewing-Manager
+    id: UpdateMaterialAsync
+    path: ../SewingManager.UseCases/PluginInterfaces/IMaterialRepository.cs
+    startLine: 61
+  assemblies:
+  - SewingManager.UseCases
+  namespace: SewingManager.UseCases.PluginInterfaces
+  summary: Оновлює існуючий матеріал.
+  example: []
+  syntax:
+    content: Task UpdateMaterialAsync(Material material)
+    parameters:
+    - id: material
+      type: SewingManager.CoreBusiness.Material
+      description: Об'єкт матеріалу з оновленими даними.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Завдання, яке виконується асинхронно.
+    content.vb: Function UpdateMaterialAsync(material As Material) As Task
+  overload: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.UpdateMaterialAsync*
+references:
+- uid: SewingManager.UseCases.PluginInterfaces
+  commentId: N:SewingManager.UseCases.PluginInterfaces
+  href: SewingManager.html
+  name: SewingManager.UseCases.PluginInterfaces
+  nameWithType: SewingManager.UseCases.PluginInterfaces
+  fullName: SewingManager.UseCases.PluginInterfaces
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.PluginInterfaces
+    name: PluginInterfaces
+    href: SewingManager.UseCases.PluginInterfaces.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.PluginInterfaces
+    name: PluginInterfaces
+    href: SewingManager.UseCases.PluginInterfaces.html
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync*
+  commentId: Overload:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync
+  href: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.html#SewingManager_UseCases_PluginInterfaces_IMaterialRepository_GetMaterialsByNameAsync_System_String_
+  name: GetMaterialsByNameAsync
+  nameWithType: IMaterialRepository.GetMaterialsByNameAsync
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialsByNameAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.Material}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.Material}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Material>>
+  nameWithType: Task<IEnumerable<Material>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<SewingManager.CoreBusiness.Material>>
+  nameWithType.vb: Task(Of IEnumerable(Of Material))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of SewingManager.CoreBusiness.Material))
+  name.vb: Task(Of IEnumerable(Of Material))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SewingManager.CoreBusiness.Material
+    name: Material
+    href: SewingManager.CoreBusiness.Material.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SewingManager.CoreBusiness.Material
+    name: Material
+    href: SewingManager.CoreBusiness.Material.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync*
+  commentId: Overload:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync
+  href: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.html#SewingManager_UseCases_PluginInterfaces_IMaterialRepository_DeleteMaterialByIdAsync_System_Int32_
+  name: DeleteMaterialByIdAsync
+  nameWithType: IMaterialRepository.DeleteMaterialByIdAsync
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.DeleteMaterialByIdAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.AddMaterialAsync*
+  commentId: Overload:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.AddMaterialAsync
+  href: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.html#SewingManager_UseCases_PluginInterfaces_IMaterialRepository_AddMaterialAsync_SewingManager_CoreBusiness_Material_
+  name: AddMaterialAsync
+  nameWithType: IMaterialRepository.AddMaterialAsync
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.AddMaterialAsync
+- uid: SewingManager.CoreBusiness.Material
+  commentId: T:SewingManager.CoreBusiness.Material
+  parent: SewingManager.CoreBusiness
+  href: SewingManager.CoreBusiness.Material.html
+  name: Material
+  nameWithType: Material
+  fullName: SewingManager.CoreBusiness.Material
+- uid: SewingManager.CoreBusiness
+  commentId: N:SewingManager.CoreBusiness
+  href: SewingManager.html
+  name: SewingManager.CoreBusiness
+  nameWithType: SewingManager.CoreBusiness
+  fullName: SewingManager.CoreBusiness
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.CoreBusiness
+    name: CoreBusiness
+    href: SewingManager.CoreBusiness.html
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase*
+  commentId: Overload:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase
+  href: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.html#SewingManager_UseCases_PluginInterfaces_IMaterialRepository_GetMaterialCategoriesByNameUseCase_System_String_
+  name: GetMaterialCategoriesByNameUseCase
+  nameWithType: IMaterialRepository.GetMaterialCategoriesByNameUseCase
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialCategoriesByNameUseCase
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.MaterialCategory}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{SewingManager.CoreBusiness.MaterialCategory}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<MaterialCategory>>
+  nameWithType: Task<IEnumerable<MaterialCategory>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<SewingManager.CoreBusiness.MaterialCategory>>
+  nameWithType.vb: Task(Of IEnumerable(Of MaterialCategory))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of SewingManager.CoreBusiness.MaterialCategory))
+  name.vb: Task(Of IEnumerable(Of MaterialCategory))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SewingManager.CoreBusiness.MaterialCategory
+    name: MaterialCategory
+    href: SewingManager.CoreBusiness.MaterialCategory.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SewingManager.CoreBusiness.MaterialCategory
+    name: MaterialCategory
+    href: SewingManager.CoreBusiness.MaterialCategory.html
+  - name: )
+  - name: )
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync*
+  commentId: Overload:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync
+  href: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.html#SewingManager_UseCases_PluginInterfaces_IMaterialRepository_GetMaterialByIdAsync_System_Int32_
+  name: GetMaterialByIdAsync
+  nameWithType: IMaterialRepository.GetMaterialByIdAsync
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.GetMaterialByIdAsync
+- uid: System.Threading.Tasks.Task{SewingManager.CoreBusiness.Material}
+  commentId: T:System.Threading.Tasks.Task{SewingManager.CoreBusiness.Material}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Material>
+  nameWithType: Task<Material>
+  fullName: System.Threading.Tasks.Task<SewingManager.CoreBusiness.Material>
+  nameWithType.vb: Task(Of Material)
+  fullName.vb: System.Threading.Tasks.Task(Of SewingManager.CoreBusiness.Material)
+  name.vb: Task(Of Material)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SewingManager.CoreBusiness.Material
+    name: Material
+    href: SewingManager.CoreBusiness.Material.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SewingManager.CoreBusiness.Material
+    name: Material
+    href: SewingManager.CoreBusiness.Material.html
+  - name: )
+- uid: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.UpdateMaterialAsync*
+  commentId: Overload:SewingManager.UseCases.PluginInterfaces.IMaterialRepository.UpdateMaterialAsync
+  href: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.html#SewingManager_UseCases_PluginInterfaces_IMaterialRepository_UpdateMaterialAsync_SewingManager_CoreBusiness_Material_
+  name: UpdateMaterialAsync
+  nameWithType: IMaterialRepository.UpdateMaterialAsync
+  fullName: SewingManager.UseCases.PluginInterfaces.IMaterialRepository.UpdateMaterialAsync

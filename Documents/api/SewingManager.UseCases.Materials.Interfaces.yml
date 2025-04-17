@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.UseCases.Materials.Interfaces
+  commentId: N:SewingManager.UseCases.Materials.Interfaces
+  id: SewingManager.UseCases.Materials.Interfaces
+  children:
+  - SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase
+  - SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+  - SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+  - SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+  - SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase
+  - SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase
+  - SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.UseCases.Materials.Interfaces
+  nameWithType: SewingManager.UseCases.Materials.Interfaces
+  fullName: SewingManager.UseCases.Materials.Interfaces
+  type: Namespace
+  assemblies:
+  - SewingManager.UseCases
+references:
+- uid: SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase.html
+  name: IAddMaterialUseCase
+  nameWithType: IAddMaterialUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IAddMaterialUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase.html
+  name: IDeleteMaterialUseCase
+  nameWithType: IDeleteMaterialUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IDeleteMaterialUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase.html
+  name: IEditMaterialUseCase
+  nameWithType: IEditMaterialUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IEditMaterialUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+  parent: SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.UseCases.Materials.Interfaces.IFileStorageService.html
+  name: IFileStorageService
+  nameWithType: IFileStorageService
+  fullName: SewingManager.UseCases.Materials.Interfaces.IFileStorageService
+- uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase.html
+  name: IViewMaterialByIdUseCase
+  nameWithType: IViewMaterialByIdUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IViewMaterialByIdUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase.html
+  name: IViewMaterialCategoriesByNameUseCase
+  nameWithType: IViewMaterialCategoriesByNameUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IViewMaterialCategoriesByNameUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+  commentId: T:SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+  parent: SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase.html
+  name: IViewMaterialsByNameUseCase
+  nameWithType: IViewMaterialsByNameUseCase
+  fullName: SewingManager.UseCases.Materials.Interfaces.IViewMaterialsByNameUseCase
+- uid: SewingManager.UseCases.Materials.Interfaces
+  commentId: N:SewingManager.UseCases.Materials.Interfaces
+  href: SewingManager.html
+  name: SewingManager.UseCases.Materials.Interfaces
+  nameWithType: SewingManager.UseCases.Materials.Interfaces
+  fullName: SewingManager.UseCases.Materials.Interfaces
+  spec.csharp:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html
+  spec.vb:
+  - uid: SewingManager
+    name: SewingManager
+    href: SewingManager.html
+  - name: .
+  - uid: SewingManager.UseCases
+    name: UseCases
+    href: SewingManager.UseCases.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials
+    name: Materials
+    href: SewingManager.UseCases.Materials.html
+  - name: .
+  - uid: SewingManager.UseCases.Materials.Interfaces
+    name: Interfaces
+    href: SewingManager.UseCases.Materials.Interfaces.html

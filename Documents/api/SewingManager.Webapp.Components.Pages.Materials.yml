@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: SewingManager.Webapp.Components.Pages.Materials
+  commentId: N:SewingManager.Webapp.Components.Pages.Materials
+  id: SewingManager.Webapp.Components.Pages.Materials
+  children:
+  - SewingManager.Webapp.Components.Pages.Materials.AddMaterial
+  - SewingManager.Webapp.Components.Pages.Materials.EditMaterial
+  - SewingManager.Webapp.Components.Pages.Materials.MaterialList
+  langs:
+  - csharp
+  - vb
+  name: SewingManager.Webapp.Components.Pages.Materials
+  nameWithType: SewingManager.Webapp.Components.Pages.Materials
+  fullName: SewingManager.Webapp.Components.Pages.Materials
+  type: Namespace
+  assemblies:
+  - SewingManager.Webapp
+references:
+- uid: SewingManager.Webapp.Components.Pages.Materials.MaterialList
+  commentId: T:SewingManager.Webapp.Components.Pages.Materials.MaterialList
+  href: SewingManager.Webapp.Components.Pages.Materials.MaterialList.html
+  name: MaterialList
+  nameWithType: MaterialList
+  fullName: SewingManager.Webapp.Components.Pages.Materials.MaterialList
+- uid: SewingManager.Webapp.Components.Pages.Materials.AddMaterial
+  commentId: T:SewingManager.Webapp.Components.Pages.Materials.AddMaterial
+  href: SewingManager.Webapp.Components.Pages.Materials.AddMaterial.html
+  name: AddMaterial
+  nameWithType: AddMaterial
+  fullName: SewingManager.Webapp.Components.Pages.Materials.AddMaterial
+- uid: SewingManager.Webapp.Components.Pages.Materials.EditMaterial
+  commentId: T:SewingManager.Webapp.Components.Pages.Materials.EditMaterial
+  href: SewingManager.Webapp.Components.Pages.Materials.EditMaterial.html
+  name: EditMaterial
+  nameWithType: EditMaterial
+  fullName: SewingManager.Webapp.Components.Pages.Materials.EditMaterial
