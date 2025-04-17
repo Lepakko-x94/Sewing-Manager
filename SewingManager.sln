@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SewingManger.Plugins.InMemo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SewingManager.Infrastructure", "SewingManager.Infrastructure\SewingManager.Infrastructure.csproj", "{31475325-1AE5-4501-8A4C-93B1ACEE89E4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{E92F09D8-C8DD-44CA-98CB-5342CACB6BED}"
+ProjectSection(SolutionItems) = preProject
+		documents\linting.md = documents\linting.md
+		documents\readme.md = documents\readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
