@@ -15,11 +15,20 @@
 	}
 </div>
 
+/// <summary>
+	/// Компонент для відображення групи радіо-кнопок, що представляють значення enum.
+	/// </summary>
+/// <typeparam name="TEnum">Тип enum, значення якого будуть відображені як радіо-кнопки.</typeparam>
 @code {
-	[Parameter] public TEnum? Value { get; set; }
-	[Parameter] public EventCallback<TEnum> ValueChanged { get; set; }
-	[Parameter] public string GroupName { get; set; } = Guid.NewGuid().ToString();
+	[Parameter] public TEnum? Value { get; set; } // Поточне вибране значення.
+	[Parameter] public EventCallback<TEnum> ValueChanged { get; set; } // Зворотний виклик для обробки зміни значення.
+	[Parameter] public string GroupName { get; set; } = Guid.NewGuid().ToString(); // Ім'я групи для кнопок.
 
+	/// <summary>
+	/// Отримує відображене ім'я для значення enum за допомогою атрибута Display.
+	/// </summary>
+	/// <param name="value">Значення enum.</param>
+	/// <returns>Відображене ім'я або значення enum.</returns>
 	private static string GetDisplayName(TEnum value)
 	{
 		var field = typeof(TEnum).GetField(value.ToString());

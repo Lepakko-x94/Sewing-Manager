@@ -1,5 +1,4 @@
-﻿
-@inject IViewMaterialsByNameUseCase ViewMaterialsByNameUseCase
+﻿@inject IViewMaterialsByNameUseCase ViewMaterialsByNameUseCase
 
 <table class="table">
 	<thead>
@@ -15,9 +14,9 @@
 	<tbody>
 	@if (_materials is not null && _materials.Count > 0)
 	{
-			foreach (var material in _materials)
+		foreach (var material in _materials)
 		{
-				<MaterialListItemComponent @rendermode="InteractiveServer" Material="material"></MaterialListItemComponent>
+			<MaterialListItemComponent @rendermode="InteractiveServer" Material="material"></MaterialListItemComponent>
 		}
 	}
 	</tbody>
@@ -25,13 +24,25 @@
 
 @code
 {
+	/// <summary>
+	/// Список матеріалів, який буде відображений у таблиці.
+	/// </summary>
 	private List<Material>? _materials;
 
+	/// <summary>
+	/// Фільтр для пошуку матеріалів за назвою, який передається з батьківського компонента.
+	/// </summary>
 	[Parameter]
 	public string? SearchInventoryFilter { get; set; }
 
+	/// <summary>
+	/// Метод, який викликається при оновленні параметрів компонента.
+	/// Використовується для завантаження списку матеріалів на основі пошукового фільтра.
+	/// </summary>
+	/// <returns>Завдання, що виконується асинхронно.</returns>
 	protected override async Task OnParametersSetAsync()
 	{
+		// Викликається метод для отримання матеріалів, враховуючи пошуковий фільтр
 		_materials = (await ViewMaterialsByNameUseCase.ExecuteAsync(SearchInventoryFilter ?? string.Empty)).ToList();
 	}
 }

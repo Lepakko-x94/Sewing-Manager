@@ -1,15 +1,23 @@
 ﻿using SewingManager.CoreBusiness;
 using SewingManager.UseCases.PluginInterfaces;
 using System.Diagnostics;
+using System.Drawing;
+using System.IO.Pipelines;
 using System.Xml.Linq;
 
 namespace SewingManger.Plugins.InMemory
 {
+    /// <summary>
+    /// Репозиторій для управління матеріалами та їх категоріями в пам'яті.
+    /// </summary>
     public class MaterialRepository : IMaterialRepository
     {
         private readonly List<MaterialCategory> _categories;
         private readonly List<Material> _materials;
 
+        /// <summary>
+        /// Ініціалізує новий екземпляр репозиторію з попередньо визначеними категоріями та матеріалами.
+        /// </summary>
         public MaterialRepository()
         {
             _categories = new List<MaterialCategory>
@@ -70,6 +78,15 @@ namespace SewingManger.Plugins.InMemory
             }
         }
 
+        /// <summary>
+        /// Отримує список матеріалів за назвою.
+        /// </summary>
+        /// <param name="name">Назва матеріалу для пошуку (чутливість до регістру ігнорується).</param>
+        /// <returns>Список матеріалів, що відповідають критерію пошуку.</returns>
+        /// <example>
+        /// var materials = await repository.GetMaterialsByNameAsync("Бавовна");
+        /// foreach (var material in materials) { Console.WriteLine(material.Name); }
+        /// </example>
         public async Task<IEnumerable<Material>> GetMaterialsByNameAsync(string name)
         {
             if (string.IsNullOrWhiteSpace(name)) return await Task.FromResult(_materials);
@@ -88,6 +105,15 @@ namespace SewingManger.Plugins.InMemory
             return Task.CompletedTask;
         }
 
+        /// <summary>
+        /// Додає новий матеріал до репозиторію.
+        /// </summary>
+        /// <param name="material">Модель матеріалу для додавання.</param>
+        /// <returns>Завдання, що завершується після додавання.</returns>
+        /// <example>
+        /// var material = new Material { Name = "Шовк", Type = MaterialType.Cut };
+        /// await repository.AddMaterialAsync(material);
+        /// </example>
         public Task AddMaterialAsync(Material material)
         {
             if (_materials.Any(x => x.Name.Equals(material.Name, StringComparison.OrdinalIgnoreCase)))
@@ -96,9 +122,9 @@ namespace SewingManger.Plugins.InMemory
             var maxId = _materials.Max(x => x.MaterialId);
 
             material.MaterialId = maxId + 1;
-             _materials.Add(material);
+            _materials.Add(material);
 
-             return Task.CompletedTask;
+            return Task.CompletedTask;
         }
 
         public async Task<IEnumerable<MaterialCategory>> GetMaterialCategoriesByNameUseCase(string name)
@@ -127,9 +153,19 @@ namespace SewingManger.Plugins.InMemory
             return await Task.FromResult(tempMaterial);
         }
 
+        /// <summary>
+        /// Оновлює дані існуючого матеріалу.
+        /// </summary>
+        /// <param name="material">Модель матеріалу з оновленими даними.</param>
+        /// <returns>Завдання, що завершується після оновлення.</returns>
+        /// <example>
+        /// var material = await repository.GetMaterialByIdAsync(1);
+        /// material.Quantity = 2000;
+        /// await repository.UpdateMaterialAsync(material);
+        /// </example>
         public Task UpdateMaterialAsync(Material material)
         {
-            if (_materials.Any(x => x.MaterialId != material.MaterialId&&
+            if (_materials.Any(x => x.MaterialId != material.MaterialId &&
                                       x.Name.Equals(material.Name, StringComparison.OrdinalIgnoreCase)))
                 return Task.CompletedTask;
 

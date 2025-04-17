@@ -12,15 +12,25 @@
 </EditForm>
 
 @code {
-	
+	/// <summary>
+	/// Текст фільтра пошуку, який відображається в полі вводу.
+	/// </summary>
 	[SupplyParameterFromForm] 
 	private string SearchFilter { get; set; } = string.Empty;
 
+	/// <summary>
+	/// Подія, яка викликається при натисканні на кнопку пошуку або натисканні Enter в полі вводу.
+	/// </summary>
 	[Parameter]
 	public EventCallback<string> OnSearch { get; set; }
 
+	/// <summary>
+	/// Метод, який викликається при відправці форми пошуку.
+	/// Він ініціює подію пошуку з переданим значенням фільтра.
+	/// </summary>
 	private void Search()
 	{
+		// Викликає подію пошуку, передаючи текст пошуку
 		OnSearch.InvokeAsync(SearchFilter);
 	}
 }

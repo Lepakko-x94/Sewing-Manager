@@ -2,49 +2,60 @@
 
 @if (this.Material is not null)
 {
-	<tr>
-		<td style="width: 8%;">
-			<img src="@(Material.ImageUrl)" alt="Material Image" style="width: 100%; height: auto; object-fit: cover;" />
-		</td>
-		<td style="width: 37%;">@Material.Name</td>
-		<td style="width: 10%;">@Material.MaterialCode</td>
-		<td style="width: 15%;">
-			@if (Material.Type == MaterialType.Piece)
-			{
-				@($"{Material.Quantity} шт.")
-			}
-			else if (Material.Type == MaterialType.Cut)
-			{
-				@($"{Material.Quantity} м")
-			}
-		</td>
-		<td style="width: 15%;">@Material.Price.ToString("C")</td>
-		<td style="width: 15%;">
-			<div class="dropdown">
-				<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton-@Material.MaterialId" data-bs-toggle="dropdown" aria-expanded="false">
-					Дії
-				</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-@Material.MaterialId">
-					<li>
-						<a class="dropdown-item" href="materials/edit/@Material.MaterialId">Edit</a>
-					</li>
-					<li>
-						<button class="dropdown-item" @onclick="async () => { await DeleteMaterial(Material.MaterialId); }">Delete</button>
-					</li>
-				</ul>
-			</div>
-		</td>
-	</tr>
+    <tr>
+        <td style="width: 8%;">
+            <img src="@(Material.ImageUrl)" alt="Material Image" style="width: 100%; height: auto; object-fit: cover;" />
+        </td>
+        <td style="width: 37%;">@Material.Name</td>
+        <td style="width: 10%;">@Material.MaterialCode</td>
+        <td style="width: 15%;">
+            @if (Material.Type == MaterialType.Piece)
+            {
+                @($"{Material.Quantity} шт.")
+            }
+            else if (Material.Type == MaterialType.Cut)
+            {
+                @($"{Material.Quantity} м")
+            }
+        </td>
+        <td style="width: 15%;">@Material.Price.ToString("C")</td>
+        <td style="width: 15%;">
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton-@Material.MaterialId" data-bs-toggle="dropdown" aria-expanded="false">
+                    Дії
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-@Material.MaterialId">
+                    <li>
+                        <a class="dropdown-item" href="materials/edit/@Material.MaterialId">Edit</a>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" @onclick="async () => { await DeleteMaterial(Material.MaterialId); }">Delete</button>
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
 }
 
 @code {
 
-	[Parameter]
-	public Material? Material { get; set; }
+    /// <summary>
+    /// Матеріал, який відображається в таблиці.
+    /// </summary>
+    [Parameter]
+    public Material? Material { get; set; }
 
-	private async Task DeleteMaterial(int materialId)
-	{
-		await DeleteMaterialUseCase.ExecuteAsync(materialId);
-		this.Material = null;
-	}
+    /// <summary>
+    /// Метод для видалення матеріалу за допомогою використання `IDeleteMaterialUseCase`.
+    /// Після видалення матеріал оновлюється.
+    /// </summary>
+    /// <param name="materialId">Ідентифікатор матеріалу для видалення.</param>
+    private async Task DeleteMaterial(int materialId)
+    {
+        // Викликає метод для видалення матеріалу
+        await DeleteMaterialUseCase.ExecuteAsync(materialId);
+
+        // Оновлює Material на null після видалення
+        this.Material = null;
+    }
 }
