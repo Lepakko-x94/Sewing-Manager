@@ -4,7 +4,7 @@ using SewingManager.Webapp.ViewModels;
 
 namespace SewingManager.Webapp.ViewModelsValidations;
 
-public class Material_QuantityValidationByType : ValidationAttribute
+public class Material_QuantityValidationByTypeAttribute : ValidationAttribute
 {
     protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
     {

@@ -364,3 +364,4 @@ FodyWeavers.xsd
 
 # Directory with images for testing
 SewingManager.Webapp/wwwroot/images/
+/.sonarqube/conf

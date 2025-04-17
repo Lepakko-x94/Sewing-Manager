@@ -113,7 +113,7 @@ namespace SewingManger.Plugins.InMemory
             var material = _materials.FirstOrDefault(x => x.MaterialId == materialId);
             var tempMaterial = new Material
             {
-                MaterialId = material.MaterialId,
+                MaterialId = material!.MaterialId,
                 MaterialCode = material.MaterialCode,
                 CategoryId = material.CategoryId,
                 Name = material.Name,
