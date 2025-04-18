@@ -1,56 +1,87 @@
 # Sewing-Manager
 
-Sewing-Manager is an open-source application designed to streamline sewing-related workflows. Whether you're managing a small tailoring business, organizing custom orders, or tracking materials and inventory, this tool helps you stay organized and efficient.
+Sewing-Manager — це застосунок із відкритим кодом, призначений для спрощення робочих процесів, пов’язаних із шиттям. Незалежно від того, чи керуєте ви невеликим кравецьким бізнесом, організовуєте індивідуальні замовлення, чи відстежуєте матеріали та інвентар, цей інструмент допоможе вам залишатися організованим та ефективним.
 
-## Features
+## Функціонал
 
-- **Order Management**: Track customer orders, deadlines, and specifications.
-- **Inventory Tracking**: Monitor fabric, threads, and other materials.
-- **Customer Database**: Store client information and order history.
-- **Task Scheduling**: Assign tasks and manage production timelines.
+- **Керування замовленнями**: Відстежуйте замовлення клієнтів, терміни виконання та специфікації.
+- **Облік інвентарю**: Слідкуйте за тканинами, нитками та іншими матеріалами.
+- **База клієнтів**: Зберігайте інформацію про клієнтів та історію їхніх замовлень.
+- **Планування завдань**: Призначайте завдання та керуйте термінами виробництва.
 
-## Installation
+# Посібник із налаштування проекту
 
-1. **Clone the Repository**:
+Далі наведені покрокові інструкції для налаштування середовища розробки та запуску проєкту Blazor.
 
-   ```bash
-   git clone https://github.com/Lepakko-x94/Sewing-Manager.git
-   cd Sewing-Manager
-   ```
+## Необхідне програмне забезпечення
 
-2. **Install Dependencies**:
+Перед початком встановіть наступне програмне забезпечення:
 
-   ```bash
-   npm install
-   ```
+1. **Git** - Система контролю версій
+   - Windows/macOS/Linux: Завантажте та встановіть із [git-scm.com](https://git-scm.com/downloads).
+   - Перевірте встановлення: `git --version`
 
-3. **Run the Application**:
+2. **Visual Studio** (або інший IDE, наприклад, Visual Studio Code)
+   - Завантажте та встановіть із [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
+   - Під час встановлення обов’язково виберіть робоче навантаження:
+     - **ASP.NET і веброзробка**
+   - У випадку використання VS Code, встановіть наступні розширення:
+     - **C# Extension** (від Microsoft)
+     - **C# XML Documentation Comments** (опціонально, для кращої документації коду)
 
-   ```bash
-   npm start
-   ```
+3. **Node.js** (для інструментів фронтенду або залежностей JavaScript)
+   - Завантажте та встановіть із [nodejs.org](https://nodejs.org/) (рекомендується LTS-версія).
+   - Перевірте встановлення: `node --version` та `npm --version`
 
-## Usage
+На даному етапі розробки БД не використовується, але у планах застосування SQLite. Для роботи з нею встановіть [DB Browser for SQLite](https://sqlitebrowser.org/)
+Та відповідні пакети:
+ - `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
+ - `dotnet add package Microsoft.EntityFrameworkCore.Tools`
+ - `dotnet add package Microsoft.EntityFrameworkCore.Design`
 
-1. Open the application in your browser or as a desktop app.
-2. Create a new project or order by navigating to the "Orders" section.
-3. Add customer details, materials, and deadlines.
-4. Use the dashboard to monitor progress and manage tasks.
+## Покрокове налаштування
 
-## Contributing
+### 1. Клонування репозиторію
+Склонуйте репозиторій проєкту на локальну машину:
+```bash
+git clone https://github.com/Lepakko-x94/Sewing-Manager
+cd Sewing-Manager
+```
 
-Contributions are welcome! To contribute:
+### 2. Налаштування середовища розробки
+- Відкрийте папку проєкту у Visual Studio або іншому IDE.
+- Переконайтеся, що .NET SDK налаштовано правильно, виконавши:
+  ```bash
+  dotnet restore
+  ```
+  Це відновить усі NuGet-пакети, визначені у проєкті.
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit (`git commit -m "Add new feature"`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a Pull Request.
+### 3. Встановлення та конфігурація залежностей
+- Якщо проєкт використовує додаткові залежності (наприклад, npm для фронтенду), виконайте:
+  ```bash
+  npm install
+  ```
 
-Please ensure your code follows the project's coding standards and includes relevant tests.
+### 5. Запуск проєкту в режимі розробки
+- Для запуску проєкту виконайте:
+  ```bash
+  dotnet run
+  ```
+  Або відкрийте файл рішення (.sln) у Visual Studio та натисніть Ctrl + F5.
+- Після запуску проект доступний за адресою: `https://localhost:7070`
 
-## Contact
+## Внесок у проєкт
 
-For questions or suggestions, feel free to reach out:
+Вітаються будь-які внески! Щоб долучитися:
 
-- GitHub: [Lepakko-x94](https://github.com/Lepakko-x94)
+1. Склонуйте репозиторій.
+2. Створіть нову гілку (`git checkout -b feature-branch`).
+3. Внесіть зміни та закомітьте їх (`git commit -m "Додано нову функцію"`).
+4. Надішліть зміни до гілки (`git push origin feature-branch`).
+5. Відкрийте Pull Request.
+
+Будь ласка, переконайтеся, що ваш код відповідає стандартам кодування проєкту та включає відповідні тести.
+
+## Додаткові примітки
+- Для роботи з проєктом ознайомтеся з іншою документацією в папці `/docs`.
+- Для запитань чи пропозицій звертайтеся: [Lepakko-x94](https://github.com/Lepakko-x94)
