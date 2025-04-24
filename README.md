@@ -85,3 +85,7 @@ cd Sewing-Manager
 ## Додаткові примітки
 - Для роботи з проєктом ознайомтеся з іншою документацією в папці `/docs`.
 - Для запитань чи пропозицій звертайтеся: [Lepakko-x94](https://github.com/Lepakko-x94)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
