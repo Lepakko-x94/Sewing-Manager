@@ -17,9 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SewingManager.Infrastructur
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{E92F09D8-C8DD-44CA-98CB-5342CACB6BED}"
 	ProjectSection(SolutionItems) = preProject
-		documents\linting.md = documents\linting.md
-		documents\readme.md = documents\readme.md
 		documents\generate_docs.md = documents\generate_docs.md
+		documents\linting.md = documents\linting.md
 	EndProjectSection
 EndProject
 Global
